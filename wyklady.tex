@@ -1,0 +1,1351 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[pdftex]{graphicx}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage{upgreek}
+\usepackage{ wasysym }
+
+\begin{document}
+\section{Prąd elektryczny}
+\textbf{Prąd elektryczny} jest to uporządkowany ruch ładunków elektrycznych. Prąd przepływa tylko jeśli istnieje w przewodniku istnieje pole elektryczne - na końcach przedziału występuje różnica potencjałów, czyli istnieje wypadkowy przepływ ładunku przez powierzchnię. Z chwilą wyrównania się potencjałów ustaje przenoszenie ładunku
+
+Nie jest prądem ruch elektronów przewodnictwa w izolowanym kawałku przewodnika - elektrony poruszają się w obu kierunkach, czyli wypadkowy przepływ ładunku = 0. Aby zachować w przewodniku ciągły przepływ prądu, do obu jego końców musi być przyłożone \emph{źródło napięcia} (źródło energii elektrycznej utrzymujące w sposób ciągły różnicę potencjałów, np bateria, akumulator, prądnica elektryczna) i musi być zapewniona zamknięta droga przepływu prądu, czyli \emph{obwód elektryczny}
+
+\emph{Obwód elektryczny} - układ, w którego skład wchodzą:
+\begin{itemize}
+\item źródło napięcia
+\item przewody przewodzące prąd
+\item inne elementy, np: oporniki, cewki, kondensatory
+\end{itemize}
+
+\emph{odbiornik} - urządzenie, które zamienia energię elektryczną na inny rodzaj energii
+
+Kierunek przepływu prądu:
+\begin{description}
+\item[umowny] zgodny z kierunkiem ruchu ładunków dodatnich, przeciwny do ruchu ładunków ujemnych
+\item[rzeczywisty] na odwrót
+\end{description}
+\emph{Natężenie prądu elektrycznego} $(I)$ - ilość ładunku ($Q$) przepływającego przez przekrój poprzeczny przewodnika w jednostce czasu ($t$). Jednostka - 1 amper, czyli kulomb przez sekundę
+$$I=\frac{Q}{t}\left[A=\frac{C}{s}\right]$$
+Natężenie chwilowe prądu (gdy natężenie prądu nie jest stałe w czasie
+$$I = \frac{dQ}{dt}$$
+
+Gęstość prądu elektrycznego ($j$) - natężenie prądu na jednostkę powierzchni przekroju poprzecznego przewodnika -- dla stałego przepływu prądu, zachodzącego prostopadle do powierzchni $S$\\
+Dla każdego elementu przekroju przewodnika wartość $j$ jest równa natężeniu prądu przepływającego przez ten element, przypadającego na jednostkę pola jego powierzchni
+$$j = \frac{I}{S}\left[\frac{A}{m^2}\right]$$
+Gęstość prądu elektrycznego jest wektorem - kierunek i zwrot zgodne z kierunkiem i zwrotem wektora prędkości ładunków dodatnich
+
+\textbf{Prawo Ohma} - Stosunek napięcia pomiędzy końcami przewodnika do natężenia płynącego w nim prądu jest wielkością stałą, niezależną od napięcia i natężenia prądu. Nosi on nazwę oporu.\\
+Warunek: przewodnik znajduje się w stałej temperaturze
+$$R=\frac{\Delta V}{I}=\frac{U}{I}\left[1\Omega=1\frac{V}{A}\right]$$
+
+\emph{Opornik} - przewodnik o określonym oporze elektrycznym.\\
+Element obwodu spełnia prawo Ohma, jeśli jego opór nie zależy od wartości i kierunku przyłożonej różnicy potencjałów
+
+\emph{Opór elektryczny (rezystancja)} - wynik oddziaływania elektronów przewodnictwa z jonami sieci krystalicznej - właściwość ciała. 
+$$R=\frac{\upvarrho\cdot l}{S}$$
+$$ \upvarrho =\frac{E}{j}\left[1\Omega\cdot m\right]$$
+$l$ - długość przewodnika, $S$ - pole przekroju przewodnika, $\upvarrho$ - opór elektryczny właściwy (rezystywność) -- właściwość materiału, E - natężenie pola elektrycznego w pewnym punkcie przewodnika, $j$ - gęstość prądu elektrycznego w rozważanym punkcie\\
+$\sigma$ - przewodność właściwa (konduktywność), odwrotność rezystywności
+$$\sigma = \frac{1}{\upvarrho}$$
+$G$ - przewodność (konduktancja), odwrotność rezystancji
+$$G=\frac{1}{R}$$
+Prościej:
+\begin{description}
+\item[rezystywność, konduktywność] związane sa z określonym materiałem, bez względu na jego wymiary geometryczne (wszystko jedno czy będzie mały kawałek jakiegoś materiału czy duży, jego rezystywność będzie taka sama)
+
+\item[rezystancja, konduktancja] zależą od wymiarów (przekroju, dlugości). 
+\end{description}
+Jeśli np. będziesz mieć 2 kawalki materialu (powiedzmy walce) o tym samym przekroju i jeden 2 razy dluższy od drugiego, to ten dluższy będzie mial 2 razy większą rezystancje (R~l) a jeżeli beda miały tę samą dlugość, ale jeden bedzie mial 2 razy większy przekrój, to ten o większym przekroju bedzie mial 2 razy mniejszą rezystancje (R~1/s) 
+
+Mikroskopowa wektorowa postać prawa Ohma:
+$$\vec{j}=\sigma\cdot\vec{E}$$
+Wyprowadzenie:
+$$j=\frac{I}{S} = \frac{U}{RS}=\frac{El}{RS}=\frac{E}{\upvarrho}=\sigma\cdot E$$
+Materiał przewodzący spełnia prawo Ohma, jeśli jego opór właściwy nie zależy od wartości i kierunku przyłożonego pola elektrycznego
+
+\emph{Praca prądu elektrycznego} - praca wykonana przez siły elektrycznego przy przenoszeniu ładunku podczas przepływu prądu (zmiana energii potencjalnej ładunku przepływającego przez odbiornik, od pkt A do B). Jest ona równa iloczynowi napięcia, natężenia prądu i czasu jego przepływu
+$$W = UIt=I^2Rt=\frac{U^2}{R}t\left[VAs=Ws=J\right]$$
+Energia potencjalna ładunku przepływającego przez odbiornik maleje. Potencjał punktu podłączonego z dodatnim biegunem baterii jest wyższy niż punktu połączonego z ujemnym biegunem baterii. \\
+Tracona energia przekształcana jest w inny rodzaj energii w zależności od typu odbiornika
+
+\emph{Moc prądu elektrycznego stałego} - szybkość zmian energii elektrycznej
+$$P=\frac{dW}{dt}=U\frac{dq}{dt}=U\cdot I=I^2R=\frac{U^2}{R}\left[\frac{J}{S}=W\right]$$
+
+\emph{Straty cieplne -- ciepło Joule'a}\\
+Odbiornik energii zawierający tylko opornik (np grzejnik). Cała energia stracona przez ładunek $dq$ poruszający się przy napięciu $U$ wydziela się w oporniku w postaci energii cieplnej. Przemiana energii elektrycznej na energię cieplną, zwana ciepłe Joule'a, opisana jest równaniem:
+$$P=I^2R=\frac{U^2}{R}$$
+Elektrony przewodnictwa poruszając się w przewodniku zderzają się z atomami (jonami) przewodnika i tracą energię (którą uzyskału w polu elektrycznym) -- wzrost temperatury opornika
+
+\emph{Prąd przemienny (sinusoidalny)} -- prąd, którego wartość i kierunek natężenia zmieniają się jak funkcja sinus
+
+\emph{Siła elektromagnetyczna}\\
+Aby spowodować stały przepływ prądu przez dowolny odbiornik prądu elektrycznego (rezystor, żarówkę itp), potrzebne jest urządzenie ``pompujące'' ładunek elektryczny(źródło siły elektromotorycznej (SEM) - baterie, generatory elektryczne)\\
+Wykonując pracę nad ładunkami źródło SEM utrzymuje stałą różnice potencjałów pomiędzy parą swoich biegunów (zacisków)\\
+Źródło SEM wykonuje prace nad ładunkami i wymusza ich ruch z bieguna o mniejszym potencjale do bieguna o więksym potencjale (przeciwnie do sił elektrycznych działających na ładunek). \\
+W źródle SEM musi istnieć pewne źródło energii, którego kosztem jest wykonywana praca\\
+Wykonywanie pracy przez źródło odbywa się kosztem innej energii (np chemicznej)
+
+\emph{Siła elektromotoryczna $\varepsilon$ źródła (SEM)} - praca W przypadająca na jednostkowy ładunek $q$, jaką wykonuje źródło przenosząc ładunek pomiędzy swoimi biegunami w kierunku przeciwnym do sił pola elektrycznego działających na ten ładunek
+$$\varepsilon=\frac{W}{q}\left[\frac{1J}{1C}=1V\right]$$
+Miarą SEM jest różnica potencjałów na biegunach źródła prądu w warunkach, kiedy przez ogniwo nie płynie prąd (ogniwo otwarte).\\
+Kiedy ze źródła czerpany jest prąc - napięcie między jego elektrodami maleje wraz ze wzrostem pobieranego z niego prądu
+
+Każde rzeczywiste źródło napięcia posiada opór wewnętrzny ($R_w$)\\
+Całkowita energia źródła rzeczywistego przekazywana jest częściowo nośnikom ładunku, a częściowo zamieniana jest na wewnętrzną energię termiczną źródła.
+$$U_z = \varepsilon - IR_w$$
+$IR_w$ - spadek potencjału na oporze wewnętrznym
+
+Prawo Ohma dla obwodu zamkniętego:
+$$\varepsilon = I(R_w + R)$$
+
+\textbf{I prawo Kirchhoffa} - W każdym węźle (punkcie rozgałęzienia) obwodu elektrycznego suma algebraiczna wszystkich prądów jest równa 0. Umownie można przyjąć, że prądy wpływające do węzła zapisujemy ze znakiem ``+'', a wypływające z ``-''
+
+\textbf{II prawo Kirchhoffa} - W dowolnym oczku (zamkniętej części) obwodu elektrycznego suma algebraiczna wszystkich napięć (zarówno źródłowych, jak i spaków napięcia na odbiornikach) jest równa 0. Znaczymy umowny kierunek obiegu oczka przez co wszystkie napięcia zgodne z tym zwrotem piszemy ze znakiem ``+'', a przeciwne z ``-''
+
+\emph{Łączenie oporników}
+\begin{description}
+\item[Szeregowo] $R=R_1+R_2+...+R_n$
+\item[Równolegle] $\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + ... + \frac{1}{R_n}$
+\end{description}
+\section{Magnetyzm}
+Magnesy trwałe są dipolami magnetycznymi - zawsze posiadają dwa bieguny - północny (N) i południowy (S). Istnienie ładunków, czyli monopoli magnetycznych nie zostało dotychczas potwierdzone. Różnoimienne bieguny magnetyczne przyciągają się, a jednoimienne bieguny magnetyczne się odpychają.
+\begin{description}
+\item[Pole magnetyczne] -- przestrzeń, w której na poruszające się ładunki elektryczne działa siła odchylająca je ``w bok''. Pole magnetyczne charakteryzuje wielkość wektorowa:
+\item[Indukcja magnetyczne ($\vec{B}$)], definiowana poprzez siłę magnetycznego oddziaływania na naładowaną cząstkę, poruszającą się z prędkością v. Kierunek wektora wyznaczamy regułą prawej dłoni. Jednostka 1 Tesla.
+  $$\vec{F} = q\vec{v}\times\vec{B}\left[1T = \frac{N}{Am}\right]$$
+  Pole magnetyczne można przedstawić graficznie za pomocą linii sił pola magnetycznego
+\item[Zjawisko Halla] -- skrzyżowanie pola E i B. 
+  \begin{itemize}
+  \item Przewodnik w polu magnetycznym poprzecznym do płynącego prądu, elektrony przewodnictwa, które poruszają się ze średnią prędkością dryfu $v_D$, są odchylane w kierunku $z$
+  \item pojawienie się na ściankach półprzewodnika różnicy potencjałów poprzecznej w stosunku do kierunku przepływu prądu (napięcie Halla - $V_H$)
+  \end{itemize}
+\item[Ruch po okręgu w polu B - cyklotron]
+  W ruchu jednostajnym po okręgu:
+  $$F=qvB=m\frac{v^2}{r}$$
+  Promień toru: 
+  $$r=\frac{mv}{qB}$$
+  Częstotliwość:
+  $$f = \frac{1}{T}=\frac{qB}{2\pi m}$$
+  Częstość cyklotronowa:
+  $$\omega = \frac{qB}{m}$$
+  Okres obiegu:
+  $$T=\frac{2\pi r}{v}=\frac{2\pi m}{qB}$$
+\item[Przewodnik z prądem w polu magnetycznym] - Na przewodnik znajdujący się w polu magnetycznym działa siła poprzeczna - siła Lorentza działająca na poruszające się elektrony przewodnictwa - siła elektrodynamiczna\\
+  Wszystkie elektrony przewodnictwa znajdujące się w przewodniku o długości $L$ przejdą przez płaszczyznę xx' w czasie:
+  $$t=\frac{L}{v_d}$$
+  Przepływający w tym czasie ładunek jest równy $$q=It=\frac{IL}{V_d}$$
+  Siła Lorentza:
+  $$\vec{F_B}=q\vec{v}\times\vec{B}$$
+  $$F_B = qv_dBsin90^o=\frac{IL}{v_d}v_dBsin90^o$$
+  $$F_B=ILB$$
+  $$\vec{F_B}=I\vec{L}\times\vec{B}$$
+\item[Silniki elektryczne]
+
+  Praca wykonywana przez silniki elektryczne pochodzi od siły elektrodynamicznej działającej na przewodnik w polu magnetycznym
+\item[Galwanomierz] -- miernik magnetoelektryczny
+\item[Pole magnetyczne wywołane przepływem prądu]
+
+  Pole magnetyczne wywiera siły na prądy (ładunki w ruch).\\
+  Przepływ prądu (czyli ruch ładunku) powoduje powstanie pola magnetycznego\\
+  Przepływowi prądu elektrycznego towarzyszy powstanie pola magnetycznego, które zmienia kierunek ustawienia igły magnetycznej (Doświadczenie Oersteda)
+
+  Linie pola magnetycznego wytworzone przez przewodnik z prądem:
+  \begin{itemize}
+  \item leżą w płaszczyźnie prostopadłej do przewodnika
+  \item mają kształt okręgów współśrodkowych z przewodnikiem
+  \item zwrot zgodny z regułą prawej dłony
+  \end{itemize}
+\item[Prawo Biota-Savarta]
+  $$d\vec{B} = \frac{\mu_0i}{4\pi}\frac{d\vec{l}\times\vec{r}}{r^3}$$
+  $\mu_0$ - przenikalność magnetyczna próżni ($4\pi\times 10^{-7} \left[\frac{Tm}{A}\right]$), $r$ - odległośćelementu przewodnika od punktu pola, $d \vec l$ – skierowany element przewodnika; wektor o kierunku przewodnika, zwrocie odpowiadającym kierunkowi prądu i długości równej długość elementu przewodnika,
+  $$\vec{B} = \frac{\mu_0i}{4\pi}\int\frac{d\vec{l}\times\vec{r}}{r^3}$$
+\item[Prawo Ampera]
+
+  Cyrkulacja wektora indukcji pola magnetycznego wzdłuż zamkniętego płaskiego konturu L jest równa iloczynowi $\mu_0$ i całkowitego prądu I przecinającego powierzchnię ograniczoną tym konturem
+  $$\oint\vec{B}\cdot d\vec{l}$$
+\item[Indukcja magnetyczna wokół prostoliniowego przewodnika]
+  $$\mu_0I=\oint\vec{B}\cdot d\vec{l}=B\oint\cdot dl=B2\pi R$$
+  $$2\pi RB  =\mu_0I$$
+  $$B=\frac{\mu_0I}{2\pi R}$$
+\item[Oddziaływanie dwóch przewodników z prądem - definicja ampera absolutnego]
+
+  Wartość siły przypadającej na jednostkę długości przewodnika
+  $$\frac{F}{\Delta l}=\mu_0\frac{i_1i_2}{2\pi r}$$
+  $$r= 1 [m]$$
+  $$\mu_0 = 4\pi\times 10^{-7} \left[\frac{Tm}{A}\right]$$
+  $$\Delta l = 1[m]$$
+  $$F = 2 \times 10^{-7} [N] $$
+
+  \textbf{Amper absolutny} -- 
+  Jeden amper absolutny jest to takie natężenie prądu, który płynąc w dwóch równoległych nieskończenie długich przewodnikach umieszczonych w odległości 1m od siebie powoduje oddziaływanie na siebie tych przewodników siłą 2 razy $10^{-7}$ N na każdy metr bieżący. 
+\item[Pole magnetyczne solenoidu]
+
+  Solenoid -- zwojnica, wiele zwojów przewodnika nawiniętych jeden obok drugiego i w takiej liczbie, że jego długość jest znacznie większa od średnic.\\
+  Pole indukcji jest jednorodne wewnątrz solenoidu, a na zewnątrz jego indukcja jest równa zeru
+  $$\oint\vec{B}\cdot d\vec{l}=Ba$$
+  $a$ - długość fragmentu (konturu) solenoidu 
+  $$I_p = Ina$$
+  $I_p$ - całkowite natężenie prądu, obejmowanego prostokątnym konturem, $n$ - liczba zwojów przypadających na jednostkę długości solenoidu, $n\cdot a$ - liczba zwojów objętych konturem
+  Z prawa Ampera:
+  $$Ba=\mu_0Ina$$
+  $$B = \mu_0 In$$
+  Wartość indukcji magnetycznej pola wewnątrz solenoidu nie zależy od jego średnicy ani długości, jest stałą w przekroju poprzecznym solenoidu\\
+  Solenoid umożliwia w praktyce wytworzenie w celach doświadczalnych, jednorodnego pola magnetycznego o zadanej wartości indukcji.\\
+  Analogicznie płaski kondensator umożliwia w praktyce uzyskanie jednorodnego pola elektrycznego o zadanej wartości natężenia
+\item[Pierwsze doświadczenie Faraday'a] - zbliżanie magnesu do pętli połączonej z miernikiem prądu
+  \begin{enumerate}
+  \item Prąd pojawia się tylko wtedy, kiedy występuje ruch magnesu względem pętli
+  \item Szybszy ruch wytwarza większy prąd, tj. natężenie prądu rośnie
+  \item Przybliżanie bieguna północnego do pętli - prąd płynie zgodnie z ruchem wskazówek zegara; oddalanie tego bieguna - przepływ prądu w kierunku przeciwnym. Przybliżanie i oddalanie bieguna południowego - efekt analogiczny, w przeciwnych kierunkach
+  \end{enumerate}
+\item[Drugie doświadczenie Faraday'a] - układ złożony z dwóch przewodzących pętli, które znajdują się blisko siebie, ale się nie stykają. (patrz slajd)
+
+  Zamknięcie pętli ze źródłem prądu powoduje nagły, ale krótkotrwały przepływ prądu w pętli po lewej stronie\\
+  Otwarcie klucza - pojawia się nagły i krótkotrwały prądu indukowanego, płynącego w przeciwnym kierunku
+  \textbf{WNIOSEK}: Powstanie prądu indukowanego (a więc i SEM indukowanej) tylko wtedy, gdy natężenie prądu się zmienia (podczas włączania lub wyłączania), nie gdy natężenie jest stałe (nawet gdy jest duże).
+\item [Wnioski Faraday'a]: 
+  \begin{itemize}
+  \item SEM i prąd mogą być indukowane w pętli (jak w powyższych doświadczeniach) kiedy zmienia się tzw ilość pola magnetycznego przechodzącego przez pętle
+  \item ilość pola magnetycznego może być zilustrowana przy pomocy linii pola magnetycznego, przechodzącego przez pętle
+  \end{itemize}
+
+\item[Strumień magnetyczny ($\upphi_B$)] - suma wszystkich linii pola magnetycznego, przechodzących przez określony przekrój. Jednostka 1 Weber
+  $$\upphi_B = \int \vec{B}\cdot d\vec{S} \left[Wb=T\cdot m^2 \right]$$
+\item[Prawo indukcji Faraday'a] -- Indukowana w obwodzie SEM ($\varepsilon$) jest równa szybkości z jaką zmienia się strumień pola B, przechodzący przez ten obwód
+  $$\varepsilon=-\frac{d\upphi_B}{dt}$$
+  Dla cewki złożonej z N zwojów:
+  $$\varepsilon = -N\frac{d\upphi_B}{dt}$$
+  Zmiana strumienia magnetycznego przechodzącego przez cewkę może nastąpić w wyniku:
+  \begin{itemize}
+  \item zmiany wartości indukcji magnetycznej pola w cewce
+  \item zmiany powierzchni cewki lub tej części powierzchni, która znajduje się w polu magnetycznym
+  \item zmiany kąta między kierunkiem wektora indukcji magnetycznej a powierzchnią cewki
+  \end{itemize}
+\item[Reguła Lenza] -- Prąd indukowany płynie w takim kierunku, że pole magnetyczne wytworzone przez ten prąd przeciwdziała zmianie strumienia pola magnetycznego, która ten prąd indukuje. Ponadto kierunek indukowanej SEM jest taki, jak kierunek prądu indukowanego
+
+  Obwód w kształcie prostokątnej pętli  o szerokości $a$ wyciągany z obszaru stałego pola magnetycznego ze stałą szybkością $v$. Przesuwa się o odcinek $\Delta x$, obszar ramki o powierzchni $\Delta S$ wysuwa się z pola B - strumień przenikający przez ramkę maleje o:
+  $$\Delta\upphi=B\Delta S = Ba\Delta x$$
+  $$\varepsilon = -\frac{d\upphi_B}{dt} = -Ba\frac{dx}{dt} = -Bav$$
+  $\varepsilon$ - SEM wyindukowana w czasie $\Delta t$ 
+
+  Dla przewodnika o oporze R natężenie prądu płynące w przewodniku:
+  $$I=\frac{\varepsilon}{R}=\frac{Bav}{R}$$
+  \begin{itemize}
+  \item w przewodniku, z którego wykonana jest pętla wydziela się ciepło, czyli prąd indukowany w pętli w wyniku ruchu magnesu napotyka opór elektryczny materiału
+  \item energia, przekazywana do zamkniętego układu pętla + magnes, poprzez działanie siły przekształca się w energię cieplną
+  \item im szybciej przesuwamy magnes, tym szybciej siła wykonuje prace, czyli tym większa jest szybkość, z jaką dostarczona energia jest przekształcana w energię termiczną w pętli => przekazywana moc jest większa
+  \end{itemize}
+  $$P = \frac{dW}{dt} = \vec{F}\circ \vec{v} = Fv$$
+  $$\vec{F_a} = - \vec{F}$$
+  $$F_a = F = IaB = \frac{B^2a^2v}{R}$$
+  $$P=Fv=\frac{B^2a^2v^2}{R}$$
+  $P$ - szybkość wykonywania pracy przy wyciąganiu ramki z obszaru pola magnetycznego, $F$ - siła, którą należy przyłożyć do ramki, aby wyciągnąć ją z pola MG, $F_a$ - siła przeciwdziałająca ruchowi ramki (zgodnie z regułą Lenza), wykonuje pracę (dodatnią)\\
+  Szybkość wydzielania się energii termicznej w ramce, podczas wyciągania jej ze stałą prędkością z obszaru pola magnetycznego
+  $$P=I^2R = \left(\frac{Bav}{R}\right)^2R = \frac{B^2a^2v^2}{R}$$
+  Praca wykonywana podczas przesuwania ramki w polu magnetycznym ulega w całości przekształceniu w energię termiczną w ramce
+\item[Transformator] służy do uzyskiwania większych lub mniejszych sił elektromotorycznych niż dają źródła prądu
+  \begin{itemize}
+  \item dwie cewki są nawinięte na tym samym rdzeniu (przekazanie pola MG z jednej cewki na drugą)
+  \item jedna z cewek zasilana jest prądem przemiennym wytwarzającym w niej zmienne pole magnetyczne
+  \item powstanie SEM indukcji w drugiej cewce
+  \end{itemize}
+  Obie cewki obejmują te same linie pola B => zmiana strumienia magnetycznego jest u nich jednakowa
+  $$U_1 = -N_1\frac{d\upphi_B}{dt}$$
+  $$U_2 = -N_2\frac{d\upphi_B}{dt}$$
+  $$\frac{U_1}{U_2} = \frac{N_2}{N_1}$$
+  $U$ - napięcie, $N$ - ilość zwojów.\\
+  Regulując ilość zwojów w cewkach możemy zmieniać małe napięcia na duże i odwrotnie\\
+  Znaczenie transformatora przy przesyłaniu energii:\\
+  Generatory wytwarzają na ogół prąd o niskim napięciu. Aby zminimalizować straty mocy w liniach przesyłowych zmienia się niskie napięcie na wysokie, a przed odbiornikiem trasformuje z powrotem na niskie
+\item[Indukowane pole elektryczne]
+
+  Pierścień miedziany umieszczony w polu magnetycznym. Gdy zmieniamy pole magnetyczne, w pierścieniu popłynie prąd indukowany. Jeżeli w pierścieniu płynie prąd to wzdłuż pierścienia musi istnieć pole elektryczne powodujące ruch elektronów przewodnictwa Pole elektryczne jest indukowane nawet wtedy, gdy nie ma pierścienia miedzianego. Całkowity rozkład pola elektrycznego można przedstawić za pomocą linii sił pola. Linie indukowanego pola elektrycznego mają kształt koncentrycznych okręgów (zamkniętych linii)
+
+  \textbf{Wniosek:} zmienne pole magnetyczne wytwarza pole elektryczne (wirowe)
+\item[Prawo indukcji Faradaya (po raz drugi ? )]
+  Cyrkulacja wektora natężenia pola E po dowolnym zamkniętym konturze jest równa szybkości zmiany strumienia magnetycznego przechodzącego przez ten kontur
+  $$\oint\vec{E}\cdot d\vec{s} = (\varepsilon) = -\frac{d\upphi_B}{dt}$$
+  całkowanie odbywa się po drodze, na której działa SEM, tj wzdłuż linii pola elektrycznego
+\item[Potencjał elektryczny] 
+
+  Linie pola elektrycznego wytworzonego przez ładunki satyczne nigdy nie są zamknięte -- zaczynają się na ładunkach dodatkich, a kończą się na ujemnych\\
+  Różnica potencjałów:
+  $$V_{konc} - V_{pocz} = -\int^{konc}_{pocz}\vec{E}\cdot d\vec{s}$$
+  Gdy punkt początkowy i końcowa się pokrywa dostajemy:
+  $$\oint \vec{E} \cdot d\vec{s} = 0$$ ale
+  $$\oint\vec{E}\cdot d\vec{s}\not=0$$
+  Dla pola wirowego cyrkulacj wektora pola wzdłuż obwodu zamkniętego nie jest równa zeru.\\
+  \textbf{Wniosek}: Potencjał elektryczny można zdefiniować dla pól elektrycznych wytworzonych przez ładunki statyczne. Nie można go zdefiniować dla pól elektrycznych wytworzonych przez indukcję.
+\item[Indukowane pole elektryczne - prądu Foucalta]
+
+  Zmienne pole magnetyczne indukuje pole elektryczne nie tylko w przewodach, ale i w blokach przewodzących. Prądy indukowane powstające w masywnych przewodnikach znajdujących się w zmiennym polu magnetycznym nazywamy prądami Foucalta.\\
+  W maszynach i transformatorach prądy indukowane wywołują silne nagrzewanie urządzeń i przyczyniają się do powstawaia znacznych strat energii (np płyta indukcyjna)
+\item[Indukcyjność]
+
+  Zmienne pole magnetyczne prądu płynącego przez cewkę indukuje w niej w niej SEM, zgodnie z prawem Faradaya. SEM indukowana w cewne o N zwojach:
+  $$\varepsilon = -N\frac{d\upphi_B}{dt}=-\frac{d\left(N\upphi_B\right)}{dt}$$
+  Strumień pola magnetycznego cewki oddalonej od wszelkich materiałów magnetycznych jest proporcjonalny do natężenia prądu I płynącego przez cewkę. Jednostka 1 Henr
+  $$\upphi_B = LI \left[1H = \frac{Vs}{A}\right]$$
+  L - indukcyjność, współczynnik proporcjonalności między natężeniem prądu, a strumieniem pola magnetycznego cewki - wyraża zdolność elementu do wzbudzania pola magnetycznego na skutek przepływającego przez niego prądu, cecha konstrukcyjna rozpatrywanego elementu elektrycznego
+  $$\varepsilon = -\frac{d\left(N\upphi_B\right)}{dt} = -\frac{d\left(LI\right)}{dt} = -L\frac{dI}{dt}$$
+  $$L=-\frac{\varepsilon}{\frac{dI}{dt}}$$
+  Ściśle nawinięta cewka w kształcie walca (bez rdzenia):
+  $$L=\frac{N\upphi_B}{I}=\frac{NBS}{I} = \frac{N\mu_0InS}{I}=nl\mu_0nS=\mu_0n^2IS=\mu_0n^2V$$
+  N - liczba zwojów, n - gęstość nawinięcia cewki, S - powierzchnia przekroju cewki, l - długość cewki
+
+  Zmiana prądu w obwodzie powoduje powstanie na końcach cewki różnicy potencjałó $\Delta V(\varepsilon_L)$ przeciwnej do SEM przyłożonej
+  $$\Delta V=-L\frac{dI}{dt}$$
+  Do pokonania tej różnicy potencjałów przez ładunek dq potrzebna jest energia (wykonanie pracy) $dW_B$
+  $$dW_B = \Delta V dq = L\frac{dI}{dt}dq=LdI\frac{dq}{dt}=LIdI$$
+  Energię tę (pobraną ze źródła SEM) ładunek przekazuje cewce => energia cewki wzrasta o $dW_B$\\
+  Całkowita energia pola magnetycznego zawarta w cewne o indukcyjności L podczas narastania prądu od 0 do i:
+  $$W_B = \int\limits^{W_B}_0 dW_B = \int\limits^{i}_0 Lidi = \frac{1}{2}Li^2$$
+\item[Indukcja wzajemna] Dwie cewki umieszczone blisko siebie oddziałują na siebie wzajemnie. Stały prąd $i_1$ płynący w jednej cewce utworzy strumień pola magnetycznego $\upphi$ obejmującego drugą cewkę. Jeżeli zmienimy prąd $i_1$ w czasie to w drugiej cewce pojawi się siła elektromototyczna $\varepsilon_2$
+
+  Indukcja wzajemna cewki 2 względem 1:
+  $$M_{21} = \frac{N_2\upphi_{21}}{i_1}$$
+  $$M_{21}i_1=n_2\upphi_{21}$$
+  $$M_{21}\frac{di_1}{dt}=N_2\frac{d\upphi_2}{dt} = -\varepsilon_2$$
+  $$\varepsilon_2 = -M_{21}\frac{di_1}{dt}$$
+  Analogicznie dla cewki 1 względem 2:
+  $$\varepsilon_1 = -M_{12}\frac{di_2}{dt}$$
+  SEM w jednej z cewek jest proporcjonalna do szybkości zmian prądu w drugiej cewce. Zwykle też $M_{21} = M_{12} = M$
+  Gęstość energii pola magnetycznego ($w_B$) cewki o długości l i przekroju S:
+  $$w_B =\frac{W_B}{Sl}=\frac{1}{2}\frac{Li^2}{Sl}$$
+  Indukcyjność solenoidu: $L=\mu_0n^2IS$
+  Indukcja we wnętrzu solenoidu: $B = \mu_0ni$
+  $$w_B=\frac{1}{2}\frac{B^2}{\mu_0}$$
+  Jeżeli w jakimś punkcie przestrzeni istnieje pole magnetyczne o indukcji B, to możemy uważać, że w tym punkcie jest zmagazynowana energia w ilości $\frac{1}{2}\frac{B^2}{\mu_0}$ na jednostkę objętości
+
+\item[Moc w obwodzie prądu zmiennego]
+  $$P(t)=U(t)I(t) = U_0sin\omega t\cdot I_0 sin\left(\omega t - \varphi \right)$$
+  Średnia moc w obwodzie prądu zmiennego:
+  $$\bar{P} = \frac{U_0I_0}{2}cos\varphi$$
+  $\varphi$ - przesunięcie fazowe pomiędzy napięciem i prądem
+  $$\bar{P} = \frac{U_0I_0}{2}cos\varphi=\frac{ZI_0I_0}{2}\frac{R}{Z} = \frac{I^2_0R}{2}$$
+  $Z$ - impedancja, zależność między prądem a napięciem dla prądu zmiennego, $cos\varphi=\frac{R}{Z}$ z powodów jakiegoś trójkąta impedancji (?) \\
+  Moc średnia wydzielana przy przepływie prądu zmiennego o amplitudzie $I_0$ jest taka sama jak prądu stałego o natężeniu $I_{sk} = \frac{I_0}{\sqrt{2}}$ - wartość skuteczna natężenia prądu zmiennego\\
+  $U_{sk}=\frac{U_0}{\sqrt{2}}$ - wartość skuteczna napięcia prądu zmiennego
+
+\item[Wektory magnetyczne] Oznaczenia:\\
+  \begin{itemize}
+  \item B- Indukcja magnetyczna
+  \item H - Natężenie pola magnetycznego $\left[\frac{A}{m}\right]$
+  \item M - Namagnesowanie (dipolowy moment magnetyczny na jednostkę objętości)
+  \end{itemize}
+  Zależność między indukcją a namagnesowaniem
+  $$\vec{B} = \mu_0\left(\vec{H}+\vec{M}\right)$$
+  Zależność między indukcją a natężeniem pola magnetycznego (błąd na slajdach) 
+  $$\vec{B} = \mu\vec{H}$$
+  $\mu$ - przenikalność magnetyczna ośrodka
+\item[Magnetyczne własności materii]
+
+  Elektron krążący w odległości r wokół jądra w atomie posiada magnetyczny moment dipolowy związany z orbitalnym momentem pędu L:
+  $$\mu_e = \frac{e}{2m}L$$
+  $\mu_e$ - magnetyczny moment dipolowy\\
+  Podobnie jak z orbitalnym momentem pędu elektronu, również z jego spinem związany jest moment magnetyczny tzw. spinowy moment magnetyczny
+\item[Podział atomów względem własności magnetycznych]:\\
+  \begin{itemize}
+  \item \emph{Atomy będące elementarnymi magnesami} -- atomy, które wytwarzają pole magnetyczne wokół siebie, posiadają nieparzystą liczbę elektronów walencyjnych
+  \item \emph{Atomy nie będące elementarnymi magnesami} -- atomy, które nie wytwarzają pola magnetycznego wokół siebie. Posiadają patrzystą liczbę elektronów walencyjnych i ich pola się znoszą
+  \end{itemize}
+  Podstawowe materiały magnetyczne:
+  \begin{description}
+  \item[Paramagnetyki]:\\
+    \begin{itemize}
+    \item W nieobecności zewnętrznego pola magnetycznego paramagnetyk nie jest namagnesowany
+    \item W zewnętrznym polu magnetycznym paramagnetyki ustawiają się wzdłuż linii sił pola magnetycznego
+    \item W zewnętrznym polu magnetycznym paramagnetyk magnesuje się zgodnie z tym polem
+    \item Jeżeli pole jest niejednorodne to materiał paramagnetyczny jest przyciągany do obszaru silniejszego pola magetycznego, z obszaru słabszego pola
+    \item Do paramagnetyków należą m.in. teln, lit, sód, potas, magnez
+    \end{itemize}
+  \item[Diamagnetyki]:\\
+    \begin{itemize}
+    \item Diamagnetyki samorzutnie nie wykazują właściwości magnetycznych - nie są przyciągane przez magnes
+    \item W zewnętrznym polu magnetycznym diamagnetyki ustawiają się prostopadle do linii sił pola magnetycznego
+    \item Umieszczenie diamagnetyka w zewnętrznym polu magnetycznym spowodu powstanie w tym materiale pola magnetycznego skierowanego przeciwnie do zewnętrznego pola
+    \item Jeżeli pole jest niejednorodne, materiał diamagnetyczny jest wypychany z obszaru silniejszego pola magnetycznego do obszaru słabszego pola magnetycznego - lewitacja
+    \item Należą do nich: rtęć, miedź, złoto, woda
+    \end{itemize}
+  \item[Ferromagnetyki]:\\
+    \begin{itemize}
+    \item Meteriał ferromagnetyczny składa się z wielu domen magnetycznych, w których występuje całkowite uporządkowanie magnetycznych dipoli atomowych
+    \item Domeny zorientowane są losowo i ich wzajemne momenty się znoszą
+    \item Rozmiar pojedynczej domeny to ok 0,0001-0.01m
+    \item Ferromagnetyk w niezerowym polu magnetycznym - zewnętrzne pola magnetyczne powoduje ustawienie się dipoli wzdłuż kierunku pola, w materiale powstaje silny wypadkowy moment magnetyczny
+    \item Do ferromagnetyków należą: żelazo, kobalt, nikiel oraz niektóre stopy
+    \end{itemize}
+  \end{description}
+\item[Równania Maxwella]:\\
+  \begin{itemize}
+  \item Prawo Gaussa dla elektryczności. Źródłem pola elektrycznego są ładunki. \\
+    Postać różniczkowa
+    $$div\vec{E}=\frac{\uprho}{\varepsilon}$$
+    $$\nabla \circ \vec{E}=\frac{\uprho}{\varepsilon}$$
+    Postać całkowa
+    $$\varepsilon_0\oint\vec{E}\bullet d\vec{s} = q$$
+  \item Prawo Gaussa dla magnetyzmu. Pole magnetyczne jest bezźródłowe, linie pola magnetycznego są zamknięte \\
+    Postać różniczkowa:
+    $$div\vec{B}=0$$
+    $$\nabla\circ\vec{B}=0$$
+    Postać całkowa
+    $$\oint\vec{B}\bullet d\vec{s} = 0$$
+  \item Prawo indukcji Faradaya. Zmienne w czasie pole magnetyczne wytwarza pole eletryczne\\
+    Postać różniczkowa:
+    $$rot \vec{E} = -\frac{\partial\vec{B}}{\partial t}$$
+    $$\nabla\times\vec{E}=-\frac{\partial\vec{B}}{\partial t}$$
+    Postać całkowa:
+    $$\oint\vec{E}\bullet d\vec{l} = -\frac{d\upphi_B}{dt}$$
+  \item Prawo Ampera-Maxwella. Przepływający prąd oraz zmienne pole elektryczne wytwarzają wirowe pole magnetyczne\\
+    Postać różniczkowa
+    $$rot\vec{B}=\mu\vec{j}+\mu\varepsilon\frac{\partial\vec{E}}{\partial t}$$
+    $$\nabla\times\vec{B}=\mu\vec{j}+\mu\varepsilon\frac{\partial\vec{E}}{\partial t}$$
+    Postać całkowa:
+    $$\oint\vec{B}\bullet d\vec{l} = \mu_0\left(\varepsilon_0\frac{d\upphi_E}{dt} +i\right)$$
+
+  \item Równania Maxwella są kompletnym opisem jednego z czterech fundamentalnych oddziaływać (elektromagnetycznego)
+  \item Gdy powstawały równania Maxwella (1864) wiedziano jedynie o istnieniu światłą podczerwonego, widzialnego i nadfioletowego
+  \item Równania Maxwella pokazały czym jest światło - falą elektromagnetyczną
+  \item Przewidziały i opisały wiele zjawisk, nieznanych w momencie ich tworzenia, np fale radiowe
+  \end{itemize}
+\item[Drgania elektromagnetyczne] :
+
+  Wniosek z równań Maxwella
+  \begin{itemize}
+  \item Zmienne pole magnetyczne wytwarza wirowe pole elektryczne
+  \item Zmienne pole elektryczne wytwarza wirowe pole magnetyczne
+  \end{itemize}
+  Każda zmiana w czasie pola elektrycznego wywoła powstanie zmiennego pola magnetycznego, które z kolei wytworzy zmienne pole elektryczne.\\
+  Ciąg wzajemnie sprzężonych pól elektrycznych i magnetycznych - fala elektromagnetyczna
+
+  Na podstawie wyprowadzonych równań, Maxwell wykazał:
+  \begin{itemize}
+  \item Wzajemnie sprzężone pola elektryczne i magnetyczne tworzą falę poprzeczną (wektory E i B są prostopadłe do siebie i do kierunku rozchodzenia się fali)
+  \item Obliczył prędkość fali: $c=\frac{1}{\sqrt{\mu_0\varepsilon_0}}\approx 3.0\cdot10^8 \left[\frac{m}{s}\right]$
+  \end{itemize}
+  Zależność natężenia pola B i E od czasu i położenia (dla fali rozchodzącej się wzdłuż osi x):\\
+  $B=B_0sin(k-\omega t)$, $E=E_0sin(kx-\omega t)$\\
+  $\omega = 2\pi v$ - pulsacja, $v = \frac{1}{T}$ - częstotliwość, $k=\frac{2\pi}{\uplambda}$ - liczba falowa, $\uplambda$ - długość fali, $T$ - okres drgań
+  $$c = \frac{E_0}{B_0}$$
+\item[Energia niesiona przez falę elektromagnetyczną] 
+
+
+  Fale elektromagnetyczne posiadają zdolność do przenoszenia energii od punktu do punktu. Szybkość przepływu energii przez jednostkową powierzchnię płaskiej fali elektromagnetycznej opisywana jest wektorem S, zwanym wektorem Poyntinga - pokazuje kierunek przenoszenia energii w czasie
+  $$\vec{S}=\frac{1}{\mu_0}\vec{E}\times\vec{B}\left[\frac{W}{m^2}\right]$$
+  Wektory E i B - chwilowe wartości pola elektromagnetycznego w rozpatrywanym punkcie (wektor Poyntinga - funkcja czasu)\\
+  Wektor S jest prostopadły do wektora E i do wektora B\\
+  Ciśnienie promieniowania EM - konsekwencje istnienia siły powstającej po absorpcji foronu i przekazie pędu
+  $$p=\frac{S}{c}$$
+\item[Polaryzacja fali EM].\\
+  Fala elektromagnetyczna - fala poprzeczna <=> drgające wektory E i B są prostopadłe do kierunku rozchodzenia się fali\\
+  Polaryzacja - wyróżnione ustawienie drgań fali w jednej płaszczyźnie\\
+  W fali spolaryzowanej liniowo, pole elektryczne drga w jednej płaszczyźnie\\
+  W fali niespolaryzowanej kierunek drgań pola elektrycznego zmienia się przypadkowo\\
+  Polaryzator - wszystkie kierunki drgań, z wyjątkiem jednego wyróżnionego zostaną wygaszone - światło będzie spolaryzowane liniowo
+
+  Rodzaje polaryzacji:
+  \begin{itemize}
+  \item Liniowa - oscylacje odbywają się w jednej płaszczyźnie, która zawiera kierunek rozchodzenia się fali.
+  \item Kołowa - rozchodzące się zaburzenie określane wzdłuż kierunku ruchu fali ma zawsze taką samą wartość, ale jego kierunek się zmienia. Kierunek zmian jest taki, że w ustalonym punkcie przestrzeni koniec wektora opisującego zaburzenie zatacza okrąg w czasie jednego okresu fali.
+  \item Eliptyczna - rozchodzące się zaburzenie określane wzdłuż kierunku ruchu fali ma zawsze wartość i kierunek taki, że w ustalonym punkcie przestrzeni koniec wektora opisującego zaburzenie zatacza elipsę.
+  \end{itemize}
+\item[Odbicie i załamanie światła]
+  W ramach optyki geometrycznej traktujemi światło tak, jak gdyby rozchodziło się po linii prostej. Gdy wiązka światła dociera do granicy ośrodków, następują zjawiska odbicia i załamania
+\item[Prawo odbicia światła]
+  Zjawisko odbicia fal polega na zmianie kierunku rozchodzenia się fal na granicy dwóch ośrodków, przy czym fala nie opuszcza danego ośrodka rozprzestrzeniania się.
+
+  \textbf{Prawo odbicia światła}: Promień padający, promień odbity i normalna do powierzchni odbijającej, wystawiona w punkcie padania, leżą w jednej płaszycziźnie. W zjawisku odbicia fal, kąt odbicia jest równy kątowi padania
+\item[Prawo załamania światła]. Zjawisko załamania fal polega na zmianie kierunku rozchodzenia się fal na granicy dwóch ośrodków, przy przejściu z jednego ośrodka do drugiego, na skutek różnej prędkości fali w tych ośrodkach.
+
+  \textbf{Prawo załamania światłą (prawo Snelliusa)}: Promień padający, promień załamany i normalna do powierzchni załamania, wystawiona w punkcie padania, leżą w jednej płaszczyźnie. Stosunek sinusa kąta padania $\alpha$ do sinusa kąta załamania $\beta$ dla dwóch ośrodków jest równy stosunkowi prędkości $v_1$ rozchodzenia się fali w pierwszym ośrodku do prędkości $v_2$ w drugim ośrodku
+  $$\frac{sin\alpha}{sin\beta}=\frac{v_1}{v_2}$$
+\item[Bezwzględny współczynnik załamania] Bezwzględnym współczynnikiem załamania nazywamy stosunek prędkości światła w próżni $c$ do prędkości światła w danym ośrodku $v_{osr}$:
+  $$n_{osr}=\frac{c}{v_{osr}}$$
+  Przykłady współczynników załamania: próżnia $n=1$, powietrze $n\approx 1$, woda $n=\frac{4}{3}$, szkło $n=\frac{3}{2}$ 
+\item[Względny współczynnik załamania] Względnym współczynnikiem nazywamy stosunek odpowiednich współczynników załamania
+  $$n_{21}=\frac{n_2}{n_1}$$
+  $$n_{21}=\frac{v_1}{v_2}$$
+  $$\frac{sin\alpha}{sin\beta}=\frac{n_2}{n_1}$$
+\item[Całkowite wewnętrzne odbicie]
+  Zjawisko całkowitego wewnętrznego odbicia ma miejce wtedy, gdy światło przechodzi z ośrodka gęstszego do ośrodka rzadszego, np. przejście z wody do powietrza.
+\item[Płytka równoległościenna] to przeźroczysta bryła ograniczona dwiema powierzchniami płaskimi i równoległymi. Promień przechodzący przez płytkę równoległościenną ulega przesunięciu
+\item[Pryzmat] - przeźroczysta bryła ograniczona dwiema powierzchniami płaskimi i nierównoległymi. Kąt zawarty między tymi płaszczyznami - kąt łamiący pryzmatu. Promień przechodzący przez pryzmat ulega załamaniu
+\item[Zwierciadła płaskie i kuliste] Odbibcie fal świetlnych zachodzi na wszystkich powierzchniach (w szczególności na powierzchniach płaskich i kulistych). \\
+  W zwierciadle płaskim powstaje obraz pozorny, prosty i jednakowej wielkości.\\
+  Zwierciadło kuliste powstaje jako wycinek sfery, charakteryzuje je promień krzywizny r.\\
+  Ogniskowa - odcinek łączący powierzchnię zwierciadła z ogniskiem, dla przyosiowych promieni ogniskowa jest równa połowie promienia. $f=\frac{r}{2}$\\
+  Równanie zwierciadła:
+  $$\frac{1}{f} = \frac{1}{x} + \frac{1}{y}$$
+  $f$ - ogniskowa, $x$ - odległość przedmiotu od zwierciadła, $y$ - odległość obrazu od zwierciadła.
+
+  Powiększenie obliczane jest jako stosunek wysokości obrazu do wysokości przedmiotu:
+  $$p=\frac{h_y}{h_x}$$
+  lub 
+  $$p=\frac{y}{x}$$
+\item[Soczewka] to przeroczysta bryła ograniczona dwiema powierzchniami kulistymi lub jedną kulistą i jedną płaską. Rodzaje:
+  \begin{itemize}
+  \item Soczewki skupiające(wypukłe) - dwuwypukła, płaskowypukła, wklęsłowypukła. 
+  \item Soczewki rozpraszające(wklęsłe) - dwuwklęsła, płaskowklęsła, wypukłowklęsła
+  \end{itemize}
+\item[Równanie soczewkowe]
+  $$\frac{1}{f}=\left(n_{wzg}-1\right)\left(\frac{1}{R_1}+\frac{1}{R_2}\right)$$
+  Gdy jedną powierzchnię soczewki tworzy powierzchnia płaska (promień takiej kuli musiałby być nieskończony)
+  $$R\longrightarrow\infty\Rightarrow\frac{1}{R}=0$$
+  Gdy powierzchnia soczewki jest wklęsła przyjmujemy ujemną wartość promienia
+
+  Zdolność zbierająca (skupiająca) soczewki jest odwrotnością ogniskowej. Jednostka 1 dioptria
+  $$Z=\frac{1}{f}\left[\frac{1}{m}=D\right]$$
+\end{description}
+\section{Optyka falowa}
+\begin{description}
+\item[Optyka klasyczna] - zajmuje się zakresem fal elektromagnetycznych, które są odbierane przez oko człowieka. 
+\item[Optyka geometryczna] - światło rochodzi się jako strumień promieni, promienie biegną prostoliniowo do źródła światła aż do momentu gdy napotkają przeszkodę lub zmianę ośrodka. Model przestaje działać gdy rozmiary obiektów $\sim$ 1mm
+\item[Optyka falowa] Gdy rozmiary obiektów < 1mm, obowiązuje model optyki falowej. Energia przenosi się nie poprzez ściśle określony tor, ale jednocześnie wieloma drogami (całą dostępną przestrzenią). Wielkość charakterystyczną dla modelu falowego - długość fali
+\item[Model geometryczny] - uproszczenie rzeczywistego rozchodzenia się światła, może być stosowany w sytuacjach, w których obiekty stojące na drodze światła; może być stosowany w sytuacjach, w których obiekty stojące na drodze światła są stosunkowo duże (większe niż długość fali światła). Większość widzialnych obiektów spełnia ten warunek - w typowych sytuacjach natura falowa światła się nie ujawnia, a model geometryczny jest jak najbardziej uprawniony.
+\item[Zasada Fermata] Promień świetlny biegnący z jednego punktu do drugiego przebywa drogę, na której przebycie trzeba zużyć w porównaniu z innymi, sąsiednimi drogami, minimum albo maksimum czasu
+\item[Światło] - fala elektromagnetyczna o długości fali z zakresu 0.39-0.74 mikrometra, ma dwoistą, korpuskularno-falową naturę.
+\item[Falowa natura światła] W optyce falowej światło może:\\
+  \begin{itemize}
+  \item omijać przeszkody
+  \item rozdzielać się na wiązki
+  \item rozszczepiać na kolory tylko z powodu różnic przebytej przez światło drogi
+  \end{itemize}
+  Dwa zjawiska przemawiające za falową naturą światła:
+  \begin{itemize}
+  \item dyfrakcja
+  \item interferencja
+  \end{itemize}
+\item[Zasada Huygensa]: Każdy punkt ośrodka, po dojściu do niego zaburzenia staje się źródłem cząstkowej fali kulistej. Styczna do wszystkich fal cząstkowych, wytworzonych przez sąsiadujące cząsteczki, jest powierzchnią falową fali. Prostopadła do powierzchni falowej to kierunek rozchodzenia się fali
+\item[Rozprzestrzenianie się fali w płaskiej w ośrodku jednorodnym]: Po upływie czasu t, położenie czoła fali jest wyznaczone przez powierzchnię styczną do powierzchni fal wtórnych
+\item[Dyfrakcja (ugięcie) światła] Zjawisko dyfrakcji polega na zmianie kierunku rozchodzenia się fali w wyniku natknięcia się na przeszkodę o rozmiarach porównywalnych z jej długością.
+\item[Interferencja światła] Zjawisko interferencji fal polega na nakładaniu się fal o jednakowej częstotliwości, w wyniku czego w ośrodku powstaje fala będąca sumą fal interferujących. W każdej chwili wychylenie punktu przestrzeni jest sumą wychyleń docierających do niego zaburzeń falowych
+\item[Wzór na nty prążek interferencyjny w doświadczeniu Younga]
+  $$n\uplambda = d\cdot sin\alpha_n$$
+  d - odległość między szczelinami. \\
+  Różnica dróg optycznych ($\Delta L$) przebytych przez fale składowe powoduje różnicę ich faz w punkcie nakładania się fal (P)\\
+  Różnica fal składowych decyduje o natężeniu światła w punkcie P\\
+  $\Delta L = 0 \pm m\uplambda$ - środek jasnego prążka - interferencja konstruktywna - max (m=1,2,3...)\\
+  $\Delta L = \frac{\uplambda}{2} \pm m\uplambda$ - środek ciemnego prążka - interferencja destruktywna - min
+  
+  Warunek powstania dobrze określonego obrazu interferencyjnego, interferujące fale świetlne muszą mieć dokładnie okreloną różnicę faz $\varphi$ stałą w czasie\\
+  Fale spójne: zgodność między fazami w różnych punktach wiązki światła lub w różnych wiązkach światła. Różnica faz spotykających się fal w każdym punkcie jest niezależna od czasu. \\
+\item[Natężenie światła w doświadczeniu Younga] Składowe pola elektrycznego dwóch fal w punkcie, w którym rozpatrujemy wynik interferencji\\
+  $E_1 = E_0sin\omega t$, $E_2=E_0sin\left(\omega t + \varphi\right)$
+  $$E = E_0sin\omega t + E_0sin\left(\omega t + \varphi\right) = 2E_0cos\frac{\varphi}{2}sin\left(\omega t + \frac{\varphi}{2}\right)$$
+  $$E = E_\theta sin\left(\omega t +\beta\right)$$
+  $\beta = \frac{\varphi}{2}$, $E_\theta=2E_0cos\beta$
+
+  Energia drgań harmoniczny $\sim$ do kwadratu amplitudy = natężenie fali wypadkowej
+  $$I_\theta \sim E^2_\theta$$
+  Stosunek natężeń fali wypadkowej do fali pojedynczej
+  $$\frac{I_\theta}{I_0}=\left(\frac{E_\theta}{E_0}\right)^2$$
+  $$I_\theta = 4I_0cos^2\beta$$
+  Natężenie wypadkowe zmienia się od zera, dla punktów, w których różnica faz $\varphi=2\beta=\pi$, do maksymalnego, dla punktów, w który różnica faz $\varphi=2\beta=0$
+  $$\frac{\text{różnica faz}}{2\pi}=\frac{\text{różnica dróg}}{\uplambda}$$
+\item[Interferencja na cienkich warstwach] Gdy fala świetlna pada na cienką warstwę fale świetlne odbite od przedniej i od tylnej powierzchni mogą wytworzyć obraz interferencyjny.
+
+  Różnica dróg optycznych promieni odbitych od górnej i dolnej warstwy
+  $$\Delta r = 2Ln - \frac{\uplambda}{2}$$
+  wzmocnienie: 2Ln - $\frac{\uplambda}{2} = m\uplambda$, wygaszenie $2Ln - \frac{\uplambda}{2}=\left(m+\frac{1}{2}\right)\uplambda$
+\item[Siatka dyfrakcyjna] to zbiór szczelin: prostoliniowych, równoległych i równoodległych. Stała siatki (d) to ilość szczelin przypadających na 1 mm. Światło ze wszystkich szczelin rozkłada się na ekranie. Obserwowany jest obraz interferencyjny jak z dwóch szczeli, ale o lepszej rozdzielczości.\\
+  Warunek wzmocnienia: $dsin\theta =m\uplambda$, gdzie $d$ - odległość między szczelinami, $\theta$ - kąt odchylenia
+\item[Widma emisyjne] Każdy pierwiastek i cząsteczka ma swoje charakterystyczne widmo. Spektroskopia jest używana do analizy składu pierwiastkowego nieznanych substancji
+\item[Dyfrakcja promieni Roentgena] Promieniowanie rentgenowskich (promieniowanie X) ma długość $\chi$ przedziału: $<0.01nm-10nm>$ \\
+  Dyfrakcja promieni Roentgena nie zachodzi na siatkach dyfrakcyjnych wykonanych dla światła widzialnego. Przyczyna: długość fali promieni $\chi$ jest krótsza niż światła ($390-740nm$).
+
+  Warunkiem zajścia interferencji jest by rozmiary szczeliny były porównywalne lub mniejsze niż długość światła.\\
+  Nie ma technicznych sposobów na zrobienie rys w odległości mniejszej niż 0.01nm
+
+  Siatkami dyfrakcyjnymi dla promieni Roentgena mogą być kryształy, w których ułożone regularnie atomy znajdują się w odległościach mniejszych niż 0.01nm. Są to skutki przestrzenne np kryształy soli kuchennej
+
+  W opisie falowym długość, częstotliwość i prędkość fali EM są związane zależnością 
+  $$c=\uplambda\cdot v$$
+\end{description}
+\section{Fizyka kwantowa} 
+\begin{description}
+\item[Fizyka kwantowa] dotyczy świata mikroskopowego. \\
+  Istnieje dużo wielkości, które istnieją tylko w minimalnych (jednostkowych) porcjach lub jako całkowita wielokrotność tych porcji. Elementarna porcja, która jest związana z taką wielkością nazywa się kwantem.\\
+  Np. ładunek jest skwantowany. Każdy ładunek q jest całkowitą wielokrotnością łądunku elementarnego e.\\
+  $q = ne$, $e=1.6\cdot10^{-19}[C]$, $n = \pm1, \pm2, \pm3...$
+\item[Promieniowanie termiczne] Widzenie przedmiotów w dzień - efekt odbicia (lub rozproszenia) światła, w ciemności - niewidoczne. Ciała są widoczne w ciemności gdy rozgrzane do wysokich temperatur \\
+  \textbf{Promieniowanie termiczne} - promieniowanie wysyłane przez ogrzane ciała. W każdej temperaturze powyżej zera bezwzględnego wszystkie ciała emitują PT do otoczenia oraz absorbują PT z otoczenia. $R_\uplambda$ - widmowa zdolność emisyjna ciała.
+\item[$R_\uplambda d\uplambda$] - moc promieniowania - szybkość z jaką jednostkowy obszar powierzchni wypromieniowuje energię odpowiadającą długościom fal zawartym w przedziale od $\uplambda$ do $\uplambda+d\uplambda$
+\item[Całkokwita emisja energetyczna] - całkowita energia wysyłanego promieniowania w całym zakresie długości fal
+  $$R=\int\limits^\infty_0 R_\uplambda d\uplambda$$
+  Ilościowe interpretacje ww widm promieniowania trudne $\Rightarrow$ posługujemy się wyidealizowanym ciałem stałym, zwanym ciałem doskonale czarnym.
+\item[Ciało doskonale czarne] - ciało, które całkowicie pochłania padające nań promieniowanie
+  Emisja energetyczna promieniowania doskonale czarnego zmienia się wraz z temperaturą wg prawa Stefana-Boltzmana:
+  $$R=\sigma T^4$$
+  $\sigma = 5.67\cdot 10^{-8} \left[ \frac{W}{m^2K^4}\right]$ - stała Stefana-Boltzmanna\\
+  
+  Długość fali, dla której przypada maksimum emisji jest zgodnie z prawem Wiena odwrotnie proporcjonalna do temperatury ciała.
+  $$\uplambda_{max}=\frac{C}{T}$$
+  $C = 2.8978\cdot 10^{-3} m\cdot K$ - stała Wiena
+
+  Krzywe emisyjne ciała doskonale czarnego zależą tylko od temperatury, są całkiem niezależne od materiału oraz kształtu i wielkości ciała doskonale czarnego\\
+  Rozważania klasyczne (Rayleigh i Jeans):
+  \begin{itemize}
+  \item obliczenia energii promieniowania we wnęce (czyli promieniowania CDC)
+  \item Klasyczna teoria pola elektromagnetycznego - promieniowanie elektromagnetyczne odbija się od ścian wnęki tam i z powrotem tworząc fale stojące z węzłami na ściankach wnęki
+  \item Znaleziona widmowa zdolność emisyjna - rozbieżność z doświadczeniem!
+  \item Dla fal długich (małych częstotliwości) wyniki teoretyczne są bliskie krzywej doświadczalnej, dla wyższych częstotliwości wyniki teoretyczne dążą do nieskończoności.
+  \end{itemize}
+\item[Teoria Plancka promieniowania ciała doskonale czarnego] Wien przedstawił pierwszy wzór empityczny dający wyniki widmowej zdolności emisyjnej w przybliżeniu zgodne z doświadczeniem. Wzór zmodyfikowany przez Plancka - wynik w pełni zgodny z doświadczeniem. Wzór Plancka:
+  $$R_\uplambda=\frac{c_1}{\uplambda^5}\frac{1}{e^\frac{c2}{\uplambda T} - 1}$$
+  $c_1$, $c_2$ - stałe doświadczalne
+
+  Postulat Plancka: każdy atom zachowuje się jak oscylator elektromagnetyczny, posiadający charakterystyczną częstotliwość drgań, nie może mieć dowolnej energii, ale tylko ściśle określone wartości dane wzorem:
+  $$E=nhv$$
+  $E$ - energia, $n$ - liczba całkowita (kwantowa), $h$ - stała Plancka, $v$ - częstotliwość promieniowania\\
+  Radykalna zmiana w stosunku do teorii fizyki klasycznej (energia każdej fali może mieć dowolną wartość, jest ona proporcjonalna do kwadratu amplitudy). Wg Plancka energia może przyjmować tylko ściśle określone wartości, czyli jest kwantowana.
+
+  Oscylatory nie wypromieniowują energii w sposób ciągły, lecz porcjami, czyli kwantami\\
+  Kwanty są emitowane, gdy oscylator przechodzi ze stanu (stanu kwantowego) o danej energii do drugiego o innej, mniejszej energii (zmiana liczby kwantowej n o jedność) $\Rightarrow$ wypromieniowana zostaje energia w ilości:
+  $$\Delta E = hv$$
+  Dopóki oscylator pozostaje w jednym ze swoich stanów kwantowych dopóty ani nie emituje ani nie absorbuje energii - znajduje się w stanie stacjonarnym
+
+  Źródła emitują światło w sposób nieciągły, ale w przestrzeni rozchodzi się ono jako fala elektromagnetyczna\\
+  Planck zasugerował ``nominał energetyczny'' fali EM, w którym energia fali $\sim$ do jej częstotliwości
+  $$E=hv$$
+  $h=6.63\cdot10^{-34}Js$ - stała Plancka
+\item[Kwant światła] Promieniowanie elektromagnetyczne (światło) jest skwantowane i istnieje w elementarnych porcjach, nazywanych teraz fotonami. Teoria wykorzystana do wyjaśnienia zjawiska fotoelektrycznego
+\item[Charakterystyka fotonu]:
+  \begin{itemize}
+  \item Nie posiada masy spoczynkowej, czyli istnieje gdy się porusza
+  \item W próżni ma stałą prędkość $c$, w ośrodku prędkość fotonu zależy od współczynnika załamania
+  \item Gdy przechodzi przez ośrodek częstotliwość nie zmienia się, zmienia się długość fali z nim stowarzyszonej
+  \end{itemize}
+\item[Zjawisko fotoelektryczne] polega na tym, że w wyniku oświetlania określonym promieniowaniem elektromagnetycznym z powierzchni metalu wybijane są elektrony (fotoelektrony). Zjawisko to występuje np w fotokomórkach
+\item[Pierwsze doświadczenie fotoelektryczne (wnioski)]:\\
+  \begin{itemize}
+  \item Energia kinetyczna emitowanych elektronów zależy od częstotliwości (długości) fali, a nie zależy od jej natężenia (natężenia oświetlenia, promieniowania)\\
+    Nie sposób tego wyjaśnić w oparciu o falową teorię światła (dla fal energia zależy od natężenia fali)\\
+    Wyjaśnienie teorią fotonów: Zwiększając natężenie światła, zwiększami jedynie liczbę fotonów (fotoprąd), ale energia przekazanemu elektronowi jest niezmieniowa.
+  \item Natężenie prądu, który pojawia się w obwodzie jest proporcjonalne do natężenia promieniowania (światła) padającego na katodę. 
+  \end{itemize}
+\item[Drugie doświadczenie fotoelektryczne]:\\
+  \begin{itemize}
+  \item Ustalamy różnicę potencjałów V tak, aby kolektor K miał mniejszy potenciał niż tarcza T - spowalnianie wybitych elektronów
+  \item Stopniowo zmniejszamy napięcie V do momentu gdy prąd fotoelektryczny przestanie płynąć - napięcie odpowiadające tej sytuacji nazywamy potencjałem hamującym $V_h$ (napięcie hamowania)
+  \item Przy napięciu jamowania elektrony o największej energii zostają zawrócone tuż przed kolektorem. Ich energia kinetyczna jest równa:
+    $$E_{kmax} = eV_h$$
+    $e$ - ładunek elementarny
+  \end{itemize}
+\item[Potencjał hamujący (napięcie hamowania $V_h$)]:\\
+  \begin{itemize}
+  \item energia kinetyczna $E_k = \frac{mv^2}{2}$
+  \item praca pola elektryczne $W = q\cdot\Delta V$, gdzie $\Delta V$ to potencjał (napięcie) między elektrodami
+  \item zatrzymanie efektu fotoelektrycznego: praca pola elektrycznego musi być równa maksymalnej energii kinetycznej
+    $$W=E_{kmax}$$
+    $$eV_h = \frac{mv^2_{max}}{2}$$
+  \end{itemize}
+\item[Praca wyjścia]:
+  \begin{itemize}
+  \item Elektrony utrzymywane są wewnątrz tarczy siłami elektrycznymi
+  \item Do ich uwolnienia potrzebna jest pewna minimalna energia W, która zostaje zużyta na przejście elektronu przez powierzchnię metalu
+  \item Energia ta jest charakterystyczna dla każdego materiału i jest nazywana pracą wyjścia dla tego materiału
+  \item Jeżeli energia dostarczona elektronowi przez foton ($h\cdot v$) jest większa od pracy wyjścia to elektron zostanie uwolniony z tarczy
+  \item Foton przekazuje elektronowi metali swą energię tylko w całości
+  \item Einstein podsumował wyniki tych dwóch doświadczeń w równaniu
+    $$E = W + E_k$$
+  \item Energia fotonu E jest spożytkowana na: wybicie elektronu z sieci krystalicznej metalu, pracę wyjścia W i nadanie prędkości, dostarczanie energii kinetycznej $E_k$
+  \item Einstein zinterpretował zjawisko fotoelektryczne jako zderzenie dwóch cząstek fotonu i elektronu. Kwanty światła rozchodzą się w przestrzeni jak cząstki materii i gdy foton zderzy się z elektronem w metalu to może zostać przez elektron pochłonięty. Wówczas energia fotonu zostanie przekazana elektronowi
+  \end{itemize}
+\item[Kwantowa teoria Einsteina zjawiska fotoelektrycznego]:\\
+  \begin{itemize}
+  \item Zwiększając natężenie światła zwiększamy liczbę fotonów, a nie zmieniamy ich energii. Zwiększeniu ulega liczba wybitych elektronów (fotoprąd), a nie energia elektronów ($E_{kmax}$, ta nie zależy od natężenia oświetlenia)
+  \item Jeżeli mamy taką częstotliwość $v_0$, że $hv_0=W$, to wtedy $E_{kmax}=0$. Nie ma nadmiaru energii. Przy $v<v_0$ fotony (niezależnie od ich liczby - natężenia światła) nie mają dość energii do wywołania fotoemisji.
+  \item Dostarczana jest energia w postaci skupionej (kwant, porcja), a nie rozłożonej (fala); elektron pochłania cały kwant
+  \item Wzór Millikana-Einsteina powstaje po podstawieniu energii kwantu i energii kinetycznej do wzoru:
+    $$E = W + E_k$$
+    $$hv=W+\frac{mv^2}{2}$$
+  \item Inna postać wzoru Millikana-Einsteina:\\
+    $W=hv_{gr}$, $E_k=eV_h$
+    $$hv=hv_{gr} + eV_h$$ 
+  \end{itemize}
+\item[Efekt Comptona] - rozpraszanie fal elektromagnetycznych na swobodnych elektronach -- doświadczalne potwierdzenie cząstkowej natury światła. Polega na pomiarze natężenia wiązki rozproszonej pod różnymi kątami $\varphi$ jako funkcja długości fali $\uplambda$
+
+  \textbf{Wyniki doświadczenia Comptona}: Promieniowanie rozproszone ma dwie składowe o długościach fali: $\uplambda = \uplambda_0$ i $\uplambda = \uplambda_0 +\Delta\uplambda$. Przesunięcie Comptona $\Delta\uplambda$ zwiększa się wraz ze wzrostem kąta rozpraszania $\varphi$\\
+  Przyjmując padające promieniowanie jako falę - pojawienie się fali rozproszonej o zmienionej długości fali nie daje się wyjaśnić. Przyjęcie hipotezy, że wiązka promieni X jest strumieniem fotonów o energi $hv$ pozwoliło Comptonowi wyjaśnić uzyskane wyniki\\
+  Z zasady zachowania energii i zasady zachowania pędu -- wzór na przesunięcie Camptonowskie :
+  $$\Delta\uplambda = \uplambda' -\uplambda_0 = \frac{h}{m_0c}\left(1-cos\varphi\right)$$
+  $m_0$ - masa elektronu (spoczynkowa)
+\item[Energia i pęd fotonu]:
+  $$E=hv=\frac{hc}{\uplambda}=mc^2\longrightarrow m=\frac{h}{c\uplambda}$$
+  $$p=mc=\frac{h}{c\uplambda}c = \frac{h}{\uplambda}$$
+\end{description}
+\section{Światło jako fala prawdopodobieństwa}
+\begin{description}
+\item[Światło] w podejściu klasycznym fala (rozciąga się na pewien obszar), w fizyce kwantowej - emitowane i pochłaniane w postaci fotonów (powstających i znikających w pewnych punktach)
+
+  Prążki interferencyjne - nieodparty dowód na folową naturę światła. Oddziaływanie fotonów z materią przy przechodzeniu przez układ optyczny $\longrightarrow$ rozmieszczenia fotonów w przestrzeni -- obraz interferencyjny
+  \begin{itemize}
+  \item Częstość trzasków zwiększa się i zmniejsza, przechodząc na przemian przez maksima i minima odpowiadające dokładnie maksimom i minimom jasności - prążków interferencyjnych
+  \item Trzask detektora oznajmia przekazanie energii z fali świetlnej na ekran (wynik pochłonięcia fotonu); natężenie oświetlenie różnych punktów ekranu $\sim$ do sumy energii fotonów padających na nie w jednostce czasu 
+  \item Nie potrafimy przewidzieć, kiedy w pewnym konkretnym punkcie na ekranie zostanie wykryty foton
+  \item Fotony wykrywane są w pojedynczych punktach w przypadkowych momentach
+  \item Względne prawdopodobieństwo wykrycia fotonów w pewnym konkretnym punkcie w określonym przedziale czasowym jest proporcjonalne do natężenia światła w tym punkcie
+  \item Natężenie fali świetlnej w dowolnym punkcie jest proporcjonalne do kwadratu amplitudy wektora oscylującego pola elektrycznego tej fali w danym punkcie (opis falowy)
+  \item Kwadrat amplitudy wektora natężenia pola elektrycznego w dowolnym punkcie przestrzeni jest miarą prawdopodobieństwa padania fotonów w tym punkcie
+  \end{itemize}
+\item[Propabilistyczny opis fali świetlnej] Światło - to nie tylko fala elektromgnetyczna, ale także fala prawdopodobieństwa\\
+  Z każdym punktem fali świetlnej możemy powiązać liczbowe prawdopodobieńśtwo (przypadające na przedział czasu), że w pewnej małej objętości dookoła tego punktu można wykryć foton $\Rightarrow$ Własności falowe i korpuskularne światła nie wykluczają się, ale uzupełniają
+\item[Fale materii] Dwoista korpuskularno-falowa natura jest właściwa nie tylko dla światła. Wraz ze wzrostem częstotliwości światła - własności falowe coraz trudniej wykrywalne - z cząstkami materii (elektrony, neutrony, atomy itd) związana jest fala krótsza od fali promieniowania $\gamma$ 
+
+  Promień świetlny - fala, ale energię i pęd przekazuje materii tylko punktowo (w postaci fotonów)\\
+  Czemu wiązka cząstek nie miałaby mieć takich samych własności? Czyli, dlaczego w takim przypadku nie myśleć o poruszającym się elektronie - lub każdej innej cząstce - jako o fali materii, która przekazuje punktowo innej materii energię i pęd?\\
+  Uogólnienie równania na pęd fotonu dla dowolnych cząstek
+  $$p=\frac{h}{\uplambda}$$
+  Długość fali de Brogile'a - dla cząstki o pędzie $p$
+  $$\uplambda=\frac{h}{p}$$
+  $h$ - stała Plancka
+
+  Falowa natura cząstek, atomów wykorzystywana w wielu dziedzinach nauki i techniki. Dyfrakcja elektronów i neutronów: badanie struktury atomowej ciał stałych i cieczy, dyfrakcja elektronów: badanie budowy atomowej powierzchni ciał stałych
+
+  Poruszające się cząstki, mające masę spoczynkową wykazują własności falowe - zjawisko uniwersalne, nie związane z jakąś specyficzną własnością cząstek.\\
+  Własności falowe ciał makroskopowych praktycznie nie występują
+\item[Statyczny charakter fali materii] Fale materii - nie są falami elektromagnetycznymi, nie mają charateru żadnych innych fal znanych w fizyce klasycznej. Mają specyficzny kwantowy charakter
+
+  Jaki jest charakter fizyczny fal związanych z cząstkami materii? $\Leftrightarrow$ Jaki jest fizyczny charakter amplitudy fal materii?
+
+  Natężenie $\sim$ kwadrat modułu amplitudy\\
+  Doświadczenie z dyfrakcją elektronów: więcej elektronów dla pewnych kierunków $\Leftrightarrow$ największe natężenie fali de Brogile'a
+
+  Kwadrat modułu amplitudy fali de Brogile'a w danym punkcie jest miarą prawdopodobieństwa znalezienia się cząstki w tym punkcie.
+
+  Statyczny związek między pomiędzy falą i związaną z nią cząstką -- nie określa się gdzie cząstka jest, ale gdzie prawdopodobnie się znajdzie.
+
+\item[Funkcja opisująca fale materii] - funkcja falowa $\Psi$, określa prawdopodobieństwo znalezienia cząstki w danej chwili w danym punkcie przestrzeni. Prawdopodobieństwo $d\omega$, że cząstka znajduje się w elemencie objętości $dV$.\\
+  $d\omega=|\Psi|^2dV$, $|\Psi|^2 =\Psi\Psi'$ natężenie fali de Brogile'a
+  $$\int\limits^{+\infty}_{-\infty}dV=1$$
+  Konsekwencja falowo-cząsteczkowej natury materii: jedyne czego możemy dowiedzieć się o ruchu elektronów to prawdopodobieństwo znalezienia ich w przestrzeni
+\item[Zasada nieoznaczności Heisenberga] Granica stosowalności praw fizyki klasycznej:
+  \begin{itemize}
+  \item Fizyka klasyczna
+    \begin{itemize}
+    \item Dokładność pomiaru jest zdeterminowana jedynie jakością aparatury pomiarowej
+    \item Nie ma teoretycznycch ograniczeń na dokładność z jaką mogą być wykonane pomiary
+    \end{itemize}
+  \item Mechanika kwantowa
+    \begin{itemize}
+    \item Obowiązuje zasada nieoznaczoności: pewnych wielkości fizycznych nie można zmierzyć równocześnie z dowolną dokładnością
+    \item W fizyce kwantowej musimy posługiwać się pojęciem prawdopodobieństwa
+    \end{itemize}
+  \end{itemize}
+
+  Zasada nieoznaczoności dla równoczesnego pomiaru pędu i położenia:
+  $$\Delta x \Delta p_x\geq h$$
+  Im dokładniej mierzymy pęd, tym bardziej rośnie nieoznaczoność położenia $\Delta x$\\
+  $h$ - stała Plancka
+
+  Zasada nieoznaczoności dla równoczesnego pomiaru energii i czasu:
+  $$\Delta E\Delta\tau\geq h$$
+  Im dłużej cząstka jest w stanie o energii E, tym dokładniej można tę energię wyznaczyć
+
+  UWAGA: Ograniczenie dokładności pomiarów nie ma nic wspólnego z wadami i niedokładnościami aparatury pomiarowej lecz jest wynikiem falowej natury cząstek
+
+\item[Model budowy atomu wodoru]:
+  \begin{itemize}
+  \item Model ciastka z rodzynkami (atom jako przestrzennie ciągły ładunek dodatni, w którym tkwią elektrony)
+  \item Model planetarny: atom składa się z dodatnio naładowanego jądra i krążących wokół niego elektronów (podobnie jak planety krążą wokół Słońca)
+    
+    Doświadczenie Rutherforda
+    Przewidywania teoretyczne (cząstki alfa przelatują przez folię): istnieją jedynie niewielkie odchylenia od pierwotnego ruchu cząstek.\\
+    Interpretacja doświadczenia (cząstki napotykając folię są odchylane pod różnymi kątami a nawet zawracane): ładunek dodatni jest skupiony w małym jądrze atomowym, elektrony krążą w dużej odległości od jądra\\
+    Niedoskonaości modelu Rutherforda: poruszający się ruchem przyspieszonym spiralnie wokół jądra elektron wypromieniowuje energię i spada na jądro, widma atomowe (np. świecącego gazu) nie są ciągłe
+  \item Model atomu wodoru wg Bohra. Postulaty Bohra
+    \begin{itemize}
+    \item Elektron w atomie wodoru porusza się po kołowej orbicie dookoła jądra pod wpływem siły coulombowskiej i zgodnie z prawami Newtona
+    \item Elektron może poruszać się po takiej orbicie dla której moment pędu jest równy wielokrotności stałej Plancka
+      $$mv_nr_n=n\frac{h}{2\pi}$$
+      $v_n$ - prędkość elektronu na ntej orbicie, $r_n$ - promień ntej orbity, $n$ - główna liczba kwantowa, $h$ - stała Plancka
+    \item Elektron poruszający się po orbicie stacjonarnej nie wypromieniowuje energii elektromagnetycznej
+    \item Atom przechodząc ze stanu $E_n$ do stanu $E_k$ wypromieniowuje kwant energii
+      $$hv = E_n-E_k$$
+    \end{itemize}
+  \end{itemize}
+\item [Budowa atomu]: każdy atom składa się z dwóch obszarów: dodatnio naładowanego jądra i znajdującej się poza nim, ujemnie naładowanej sfery elektronowej.
+  Cząstki:
+  \begin{itemize}
+  \item Proton. Symbol: $p^+$, występowanie: jądro atomowe, masa: około 1u, ładunek elektryczny: +1
+  \item Neutron. Symbol: $n^0$, występowanie: jądro atomowe, masa: około 1u, ładunek elektryczny: brak
+  \item Elektron. Symbol: $e^-$, występowanie: powłoki elektronowe, masa: około $\frac{1}{1840}$u, ładunek elektryczny: -1
+  \end{itemize}
+  1 u (unit) odpowiada $\frac{1}{12}$ masy węgla $C^{12}$. $1.67\cdot 10^{-27}$ kg\\
+  \begin {itemize}
+  \item Stan stacjonarny atomu, w którym elektron porusza się po orbicie o najniższej energii -- stan podstawowy, dla atomu wodoru
+    $$E_1 = -13.6eV$$
+  \item Stan wzbudzony -- stan, w którym energia elektronu jest wyższa, żnajduje się on na wyższej orbicie
+  \item Wartości energii dozwolonych stanów stacjonarnych (skwantowane):
+    $$E_n = \frac{E_1}{n^2}$$
+    Największa (?) wartość = 0 dla $n=\infty$
+  \item Energia kwantów promieniowania emitowanych (lub absorbowanych) przy przejściu między orbitami (j,k):
+    $$hv=h\frac{c}{\uplambda}=E_k-E_j=E_1\left(\frac{1}{k^2}-\frac{1}{j^2}\right)$$
+  \end{itemize}
+\item[Wzór Balmera] opisujący widmo wodoru (empiryczna formuła dla dyskretnych długości fali):
+  $$\frac{1}{\uplambda_n}=R_H\left(\frac{1}{2^2}-\frac{1}{n^2}\right)$$
+  $\uplambda_n$ - długość fali widmowej, $R_H = 1.097\cdot10^7\frac{1}{m}$ - stała Rydberga, $n$ - liczba naturalna większa od 2
+
+  Model Bohra zastąpiony nowym udoskonalonym modelem budowy atomu:
+  \begin{itemize}
+  \item położenie elektronu w danej chwili czasu nie jest określone dokładnie, lecz z pewnym prawdopodobieństwem
+  \item elektron traktowany jest nie jak cząstka, ale jako fala materii
+  \end{itemize}
+\item[Zakaz Pauliego]: 
+  \begin{itemize}
+  \item Ułożenie elektronów na kolejnych powłokach określone jest poprzez zakaz Pauliego
+  \item Elektrony w atomie muszą różnić się przynajmniej jedną liczbą kwantową, tzn. nie ma dwóch takich elektrów, których stan opisywany byłby przez ten sam zestaw liczb kwantowych $n$, $l$, $m_1$, $m_s$
+  \item Struktura elektronowa atomu złożonego może być rozpatrywana jako kolejne zapełnianie podpowłok elektronami. Kolejny elektron zajmuje kolejny stan o najniższej energii
+  \item O własnościach chemicznych atomów decydują elektrony z ostatnich podpowłok (walencyjnych) odpowiedzialnych za wiązania chemiczne
+  \end{itemize}
+\item[Skład atomu] $^A_ZX$
+  \begin{itemize}
+  \item X - symbol pierwiastka
+  \item A - liczba masowa, masa atomowa -- określa liczbę nukleonów, czyli protonów i neutronów w jądrze atomowym
+  \item Z - liczba atomowa, liczba porządkowa -- określa liczbę protonów w jądrze atomowym
+  \item Liczba protonów = liczba elektronów = Z
+  \item Liczba neutronów = A-Z
+  \item Liczba nukleonów = A
+  \end{itemize}
+
+\item[Równanie Schrodingera] Znajomość ścisłej postaci funkcji falowej ($\Psi(x,y,z,t)$) jest niezbędna do określenia ruchu cząstek w konkretnych przypadkach (zjawiskach fizycznych) -- rozwiązanie równania Schrodingera.\\
+  Równanie Schrodingera - równanie różniczkowe opisujące zachowanie się układu kwantowego w czasie i przestrzeni.
+  $$-\frac{\hbar^2}{2m}\left( \frac{\partial^2\Psi}{\partial x^2} + \frac{\partial^2\Psi}{\partial y^2} + \frac{\partial^2\Psi}{\partial z^2}\right) + V\Psi = i\hbar\frac{\partial\Psi}{\partial t}$$
+  $$\hbar=\frac{h}{2\pi}$$ $\hbar$ - zredukowana stała Plancka, $V$ - potencjał układu kwantowego, $i$ -jednostka urojona
+
+  Funkcja $\Psi$ stanowiąca rozwiązanie tego równania opisuje stan o określonej energii cząstki. Znalezienie tej funkcji pozwala przewidzieć:
+  \begin{itemize}
+  \item skwantowanie energii na przykład elektrony w atomie
+  \item skwantowanie energii jąder atomowych
+  \end{itemize}
+\item[Równanie Schrodingera] - równaniem operatorowym
+  
+  Operator - pewien symbol wskazujący sposób postępowania i funkcja, która za nim występuje.\\
+  W równaniu Schrodingera występuje operator energii kinetycznej oraz operator energii potencjalnej. Operatory te działają na funkcję falową $\Psi$\\
+  $-\frac{\hbar^2}{2m}\left( \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2} \right)$ - Operator energii kinetycznej działający na funkcję falową\\
+  $V$ - Operator energii potencjalnej działający na funkcję falową
+
+  Jeżei energia potencjalna V nie zależy od czasu, rozwiązanie równania można zapisać w postaci:
+  $$\Psi(x,y,z,t)=\Psi(x,y,z)e^{-\frac{iEt}{\hbar}}$$
+  Jeżeli cząstka może przemieszczać się wzdłuż tylko jednej osi na przykład x, niezależnie od czasu równanie można zapisać 
+  $$\frac{\partial^2\Psi}{\partial x^2}=-\frac{2m}{\hbar^2}\left(E-V(x)\right)\Psi \text{ do potwierdzenia - pusty slajd} $$
+  Najprostsza forma równania Schrodingera, równanie w jednym wymiarze i niezależne od czasu -- równanie stacjonarne.
+  $E$ - energia całkowita cząstki, $V(x)$ - energia potencjalna cząstki zależna od jej położenia, niezależna od czasu
+\item[Własności funkcji falowej]:
+  \begin{itemize}
+  \item Zależna od czasu i współrzędnych przestrzennych jest wraz ze swymi pierwszymi pochodnymi skończona, ciągła i jednowartościowa.
+  \item Wielkość $|\Psi|^2$ jest gęstością prawdopodobieństwa, zatem w całym obszarze V:
+    $$\int\Psi\bullet\Psi^*dV=\int|\Psi|^2dV=1$$
+  \end{itemize}
+\item[Cząstka swobodna] - na cząstkę nie działają żadne pola. Energia potencjalna cząstki $V(x)=0$
+  $$-\frac{\hbar^2}{2m}{d^2\Psi(x)}{dx^2} = E\Psi(x)$$
+  Szukamy rozwiązania w postaci $\Psi(x)=Asin(kx)$
+  $$-\frac{\hbar^2}{2m}A\left(-k^2sin(kx)\right)=EAsin(kx)$$
+  Funkcja ta będzie rozwiązaniem gdy:
+  $$E=\frac{\hbar^2k^2}{2m}$$
+  Cząstka swobodna może przyjmować dowolną wartość energii w przedziale $(0,+\infty)$, jej energia nie jest skwantowana
+\item[Cząstka w studni potencjału] o szerokości L i nieskończonej głębokości
+  \begin{enumerate}
+  \item Przypadek klasyczny: Znajdująca się w głębokiej studni piłka może posiadać dowolną energię kinetyczną. W szczególnym przypadku, gdy znajduje się w spoczynku na dnie studni, posiada energię całkowitą równą zeru
+  \item Przypadek kwantowy. Energia potencjalna:
+    $$U(x)=\left\{\begin{array}{l}\infty \text{ dla } x\in (-\infty,0)\cup(L,\infty)\\0\text{ dla }x\in(0,L)\end{array}\right.$$
+    Warunki brzegowe: $|\Psi(0)|^2=|\Psi(L)|^2=0$, czyli cząstkę można znaleźć tylko w przedziale $x\in (0,L)$\\
+    Równanie Schrodingera dla przedziału $0 < x < L$ 
+    $$-\frac{\hbar^2}{2m}\frac{d^2\Psi}{dx^2}=E\Psi$$
+    Wprowadzając oznaczenie: $k^2=\frac{2mE}{\hbar^2}$, ogólne rozwiązanie tego równania przyjmuje postać $\Psi=Ae^{ikx}+Be^{-ikx}$ lub $\Psi=Asin(kx+\varphi)$. Funkcja falowa jest równa 0 na zewnątrz przedziału: 
+    $$\Psi(0) = Asin(\varphi)=0\Rightarrow\varphi=0$$
+    $$\Psi(L)=Asin(kL)=0\Rightarrow kL=n\pi\text{ dla n=1,2...}$$
+    z tego wynikają warunki skwantowania energii cząstki
+    $$E=\frac{\pi^2\hbar^2}{2mL^2}n^2$$
+    gdzie $n=1,2...$. \\
+    W nieskończonej studni potencjału energia cząstki może przyjmować tylko ściśle określone, różne od zera wartości
+
+    Dozwolone wartości energii jamy potencjału - poziomy energetyczne, liczba naturalna n wyznaczająca poziomy energetyczne - liczba kwantowa.\\
+    Każdej wartości liczby kwantowej odpowiada określony stan kwantowy scharakteryzowany funkcją falową $\Psi(x)$.
+    Dla $n=1 \Rightarrow E=E_1$, $n=2 \Rightarrow E=4E_1$, ogólnie $E=n^2E_1$
+    $$\Psi=\sqrt{\frac{2}{L}}sin\frac{n\pi}{L}x$$
+    $A=\sqrt{2}{L}$ z warunku normalizacji.\\
+    Wewnątrz studni powstaje fala stojąca materii z węzłami na brzegach studni.
+
+    Wnioski z przedstawionego modelu:
+    \begin{itemize}
+    \item Energia w jamie potencjalnej jest skwantowana, a najmniejsza jej wartość jest większa od zera (wg mechaniki klasycznej energia przyjmuje dowolne wartości, w tym również zero)
+    \item Gęstość prawdopodobieństwa oscyluje między wartością maksymalną a zerem (według mechaniki klasycznej gęstość prawdopodobieństwa powinna być stała w przedziale $[0,L]$)
+    \end{itemize}
+  \end{enumerate}
+\item[Zjawisko tunelowe] - zjawisko przejścia cząstki przez barierę potencjału o wysokości większej niż energia cząstki, opisane przez mechanikę kwantową.
+
+  Klasyczna cząstka nie mogła pokonać bariery potencjału w przypadku $E<V$. Mechanika kwantowa dopuszcza sytuację taką, że cząstka o energii mniejszej od wysokości bariery energetycznej wnika w głąb takiej bariery. Aby to pokazać rozwiązujemy równanie Schrodingera niezależnie od czasu, które ma postać dla obszarów I (przed barierą) i II (w obszarze bariery) odpowiednio:
+  $$I\text{     }x<0$$
+  $$-\frac{\hbar^2}{2m}\frac{d^2\Psi}{dx^2}=E\Psi$$
+  $$II\text{     }x>0$$
+  $$-\frac{\hbar^2}{2m}\frac{d^2\Psi}{dx^2}+V\Psi=E\Psi$$
+  Rozwiązanie równania w obszarze I będzie miało postać
+  $$\Psi_I = Ae^{ikx}+Be^{-ikx}\text{, gdzie }k=\sqrt{\frac{2mE}{\hbar^2}}$$
+  Rozwiązanie równania w obszarze II ma postać:
+  $$\Psi_{II}=Ce^{-\kappa x}+De^{\kappa x}\text{, gdzie }\kappa=\sqrt{\frac{2m\left(V-E\right)}{\hbar^2}}$$
+  Moduły starych A, B i C nie mogą przekraczać jedności ze względu na to, że kwadrat modułu funkcji falowej oznacza gęstość prawdopodobieństwa znalezienia cząstki, natomiast stała D musi być równa zeru ($e^{\kappa x}\longrightarrow \infty$). Ostatecznie mamy rozwiązania:
+  $$\Psi_I=Ae^{ikx}+Be^{-ikx}$$
+  $Ae^{ikx}$ - Fala padająca, $Be^{-ikx}$ - Fala odbita\\
+  $\Psi_{II}=Ce^{-\kappa x}$ - Fala wnikająca w głąb bariery\\
+  $T(E)\sim e^{-L}$ prawdopodobieństwo tunelowania cząstki jest ekspotencjalnie zależne od szerokości bariery
+
+  Wnioski z przedstawionego modelu:
+  \begin{itemize}
+  \item Istnieje niezerowe prawdopodobieństwo wniknięcia fali do wnętrza bariery, mimo energii kinetycznej cząstki mniejszej od energii bariery (Takiego efektu mechanika klasyczna nie przewidywała)
+  \item Istnienie niezerowego prawdopodobieństwa wnikania fali stwarza możliwość przenikania cząstki przez wysokie bariery o skończonej grubości, czyli tunelowego przejścia cząstek przez bariery. Mechanika kwantowa przewiduje takie zjawiska i potwierdza to eksperyment
+  \item Istnieje w przyrodzie szereg zjawisk tunelowych, na przykład emisja cząstek alfa, przechodzenie swobodnych nośników w półprzewodnikach z pasma podstawowego do pasma przewodnictwa bez zmiany energii
+  \end{itemize}
+\item[Kwantowomechaniczny opis atomu wodoru] Atom wodoru (układ trójwymiarowy) - pierwszy układ, do którego Schrodinger zastosował swoją teorię kwantową i który stanowił pierwszą jej weryfikację
+  $$\frac{\partial^2\Psi(x,y,z)}{\partial x^2}+\frac{\partial^2\Psi(x,y,z)}{\partial y^2}+\frac{\partial^2\Psi(x,y,z)}{\partial z^2}=-\frac{2m_e}{\hbar^2}\left[E-U(x,y,z)\right]\Psi$$
+  $m_e$ - masa czego? atomu wodoru/elektronu????
+
+  Energia potencjalna dwóch ładunków punktowych (elektronu i protonu), znajdujących się w odległości r jest dana wyrażeniem:
+  $$U(x,y,z) = - \frac{1}{4\pi\varepsilon_0}\frac{e^2}{r}=-\frac{1}{4\pi\varepsilon_0}\frac{e^2}{\sqrt{x^2+y^2+z^2}}$$
+  We współrzędnych sferycznych można przedstawić funkcję falową najogólniej jako iloczyn dwóch funkcji: funkcji radialnej ($R(r)$ zależnej tylko od promienia r oraz funkcji kątowej $Y(\theta, \varphi)$ zależnej tylko od kątów (przejście ze współrzędnych prostokątnych na sferyczne - energia potencjalna funkcją tylko r)
+
+  Rozwiązanie równania Schrodingera dla atomu wodoru:
+  $$\Psi_{n,l,m_l}\left(r,\theta,\varphi\right)=R_{n,l}Y_{l,m_l}\left(\theta,\varphi\right)$$ 
+
+  Trójwymiarowa funkcja falowa zależy od trzech liczb kwantowych (ruch cząstki w przestrzeni jest opisany przez trzy niezależnie zmienne: na każdą współrzędną przestrzenną przypada jedna liczba kwantowa)
+
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    \textbf{nazwa} & \textbf{symbol} & \textbf{wartość} & oznacza:\\
+    \hline
+    \hline
+    Główna liczba & n & 1,2,3... & numer orbity\\
+    kwantowa & & &\\
+    \hline
+    Poboczna liczba & l & 0,1,2,...,n-1 & wartość bezwzględna\\
+    kwantowa& & &orbitalnego momentu pędu\\
+    \hline
+    magnetyczna liczba & $m_l$ & od -l do l & rzut orbitalnego\\
+    kwantowa & & & momentu pędu na wybraną oś\\
+    \hline
+    spinowa liczba & $m_s$ & $\pm\frac{1}{2}$ & spin elektronu\\
+    kwantowa & & & \\
+    \hline
+  \end{tabular}
+  Gęstość prawdopodobieństwa znalezienia cząstki w danym punkcie przestrzeni:
+  $$|\Psi_{n,l,m_l}\left(r,\theta,\varphi\right)|^2=|R_{n,l}(r)|^2|Y_{l,m_l}\left(\theta, \varphi\right)|^2$$
+  $|R_{n,l}(r)|^2$ - Radialna gęstość prawdopodobieństwa, $|Y_{l,m_l}\left(\theta, \varphi\right)|^2$ - Kątowa gęstość prawdopodobieństwa
+\item[Kątowe rozkłady prawdopodobieństwa - orbitale], dla $l=0$ orbital s, $l=1$ orbital p itd\\
+  Orbitale można traktować jako rozkłady ładunku elektronu wokół jądra (chmura elektronowa).
+\item[Liczby kwantowe i ich znaczenie] :
+  \begin{itemize}
+  \item Kwantyzacja właściwie wszystkich wielkości fizycznych, mierzonych w mikroświecie atomów i cząsteczek (wielkości mogą przyjmować tylko pewne ściśle określone wartości)
+  \item Elektrony w atomie znajdują się na ściśle określonych orbitach
+  \item Każdej orbicie elektronowej odpowiada pewna energia
+  \item Bliższe badania pokazały, że w podobny sposób zachowują się także inne wielkości np pęd, moment pędu czy moment magnetyczny (kwantowaniu podlega tu nie tylko wartość, ale i położenie wektora w przestrzeni albo jego rzutu na wybraną oś) $\Rightarrow$ Ponumerowanie wszystkich możliwych wartości np energii czy momentu pędu, te numery to właśnie liczby kwantowe
+  \end{itemize}
+\end{description}
+\section{Laser}
+\begin{description}
+\item[Laser] - kwantowy generator światła, wzmocnienie światła przez wymuszoną emisję promieniowania
+\item[Emisja wymuszona] - zjawisko przyspieszenia wypromieniowania energii przez oświetlenie atomów wzbudzonych promieniowaniem o energii równej różnicy energii poziomów energetycznych.\\
+  W emisji spontanicznej mamy do czynienia z fotonami, których fazy i kierunki są rozłożone przypadkowo. Foton wysyłany w procesie emisji wymuszonej ma taką samą fazę oraz taki sam kierunek ruchu jak foton wymuszający.\\
+  Szansa na uzyskanie promieniowania spójnego (właściwości takie same jak fale spójne + taka sama płaszczyzna polaryzacji).
+\item[Obsadzenie poziomów] Obsadzenie = liczba atomów wzbudzonych do poziomu i. $N_i$ - obsadzenie poziomu i
+  Obsadzenie poziomów energetycznych zbioru atomów w stanie termodynamicznie ustalonym: Im wyższy poziom energetyczny tym mniejsze prawdopodobieństwo obsadzenia
+
+  Rozkład Boltzmanna
+  $$N_i \propto N_0exp\left( \frac{E_i}{kT}\right)\text{     }N_0=\sum\limits_iN_i$$
+  $A\propto B$ - A jest wprostproporcjonalne do B, $E_i$ - energia i-tego poziomu, $k$ - stała Boltzmann'a, $T$ - temperatura [K] 
+  \begin{itemize}
+  \item W danej temperaturze liczba atomów w stanie podstawowym jest większa niż liczba atomów w stanach o wyższej energii
+  \item Oświetlenie układu odpowiednim promieniowaniem -- światło padające jest silnie absorbowane, emisja wymuszona znikoma
+  \item Żeby przeważała emisja wymuszona - w układzie o wyższym stanie energetycznym powinno znajdować się więcej atomów (cząsteczek) niż w stanie niższym (rozkład musi być antyboltzmannowski).
+  \item Realizacja: zderzenia z innymi atomami lub tzw. pompowanie - wzbudzania atomów na wyższe poziomy energetyczne przez ich oświetlanie
+  \end{itemize}
+\item[Pompowanie]:
+  \begin{itemize}
+  \item Do substancji czynnej, którą może być ciecz, gaz lub ciało stałe, znajdującej się w stanie podstawowym $E_0$ dostarczana jest energia w postaci promieniowania (proces ten nazywamy pompowaniem)
+  \item Poprzez absorpcję fotonów elektrony zwiększają swoją energię. Znajdują się na poziomie energetycznym $E_1$
+  \end{itemize}
+  Czas życia elektronów w stanie $E_1$ jest krótki (około $10^{-9}$s), wobec tego następuje bezpromieniste przejście do stanu energetycznego $E_2$ (na którym długość życia elektronów jest rzędu mikro- a nawet milisekund) nazywanego stanem metastabilnym.\\
+  Rezonansowy foton wyzwala emisje wielu fotonów naraz o tej samej fazie i częstotliwości -- promieniowanie spójne
+\item[Sposoby pompowania lasera]: błysk lampy błyskowej, błysk innego lasera, przepływ prądu w gazie, reakcja chemiczna, zderzenia atomów, wstrzelenia wiązki elektronów do substancji\\
+  Oscylacyjna propogacja promieniowania w rezonatorze tworzy zbiór interferujących wiązek: ich wzmacnianie jest możliwe tylko przy pełnej zgodności faz między nimi. Lawinowy rozwój emisji wymuszonej zachodzi jeśli foton pozostanie w układzie pomiędzy zwierciadłami lasera w odległości $\frac{n\uplambda}{2}$
+  
+  Rozkłady pola nie spełniające warunku zgodności faz są tłumione\\
+  Przez częściowo przepuszczalne zwierciadło wyprowadzana jest wiązka użyteczna $\uplambda_{las}$
+\item[Pompowanie lasera rubinowego (optyczne)]: W wielkim skrócie: W wyniku oświetlania lampą błyskową prętu rubinowego, przez który przebiega tam i z powrotem promień światła fotony wzbudzane są do stanu metastabilnego. Wytwarza się przy tym bardzo duża ilość ciepła
+\item[Pompowanie lasera gazowego (np. helowo-neonowego) (pompowanie elektronowe)]: W wyniku podłączenia generatora o wysokiej częstotliwości do rury zawierającej mieszankę gazów: helu i neonu w proporcji 10:1, wzbudzane są wyładowania elektryczne. Podczas tych wyładowań elektrony zostają rozpędzone do dużej prędkości. Elektrony podczas wędrówki napotykają więcej atomów helu i zderzają się z nimi niesprężyście. W trakcie zderzenia dochodzi do przekazania energii kinetycznej, co wzbudza atomy helu do przejścia na wyższe, metastabilne poziomy energetyczne. Atomy helu zderzają się z atomami neonu i przekazują im w zderzeniach energię wzbudzenia, w wyniku czego atomy helu wracają do stanu podstawowego, a atomy neonu wzbudzane do stanów metatrwałych o energii nieco mniejszej od energii wzbudzenia atomu helu. W wyniku wzbudzenia atomów neonu może dojść do emisji wiązki światła czerwonego lub podczerwonego.
+\item[Własności światła laserowego]:
+  \begin{itemize}
+  \item Minimalna rozbieżność wiązi, równoległość -- promieniowanie lasera rozchodzi się w jednym wyznaczonym przez oś rezonatora kierunku, a średnica wiązki rośnie niezwykle powoli z odległością od okna rezonatora. Kąt rozbieżności wiązki przyjmuje wartości od łamka miliradiana dla laserów gazowych i na ciele stałym do ułamka radiana w przypadku laserów półprzewodnikowych
+  \item Spólność, koherencja -- generowane w laserze fale elektromagnetyczne rozchodzą się zachowując tę samą fazę co odróżnia je od całkowicie niespójnego promieniowania spontanicznego
+  \item Monochromatyczność -- wąski zakres widmowy
+  \item Duża gęstość mocy
+  \end{itemize}
+\item[Podział laserów]:
+  \begin{enumerate}
+  \item W zależności od mocy lasera: laser małej mocy (do 6mW, np. drukarka laserowa, napędy CD/DVD), średniej mocy (moc do 500mW), dużej mocy (od 500mW do 10kW, używane w przemyśle do cięcia i spawania)
+  \item W zależności od sposoby pracy: lasery pracy ciągłej (emitujące promieniowanie o stałym natężeniu), lasery impulsowe (emitujące impulsy światła), szczególnym rodzajem lasera impulsowego jest laser femtosekundowy
+  \item W zależności od ośrodka czynnego: ośrodek czynny decyduje od najważniejszych parametrach lasera, określa długość emitowanej fali, jej moc, sposób pompowania, możliwe zastosowania lasera.
+    \begin{itemize}
+    \item Lasery gazowe (np He-Ne, argonowy), 
+    \item cieczowe (bazwnikowe, chylatowe), 
+    \item na ciele stałym (rubinowy, neodymowy na szkle), 
+    \item półprzewodnikowe: obszarem czynnym jest półprzewodnik, najczęściej w postaci złącza p-n, pompowanie prez przepływający przez złącze prąd elektryczny. Najbardziej perspektywiczne lasery z punktu widzenia ich zastosowań w fotonice. Zalety: małe wymiary, wysokie moce, łatwość modulacji prądem sterującym o wysokiej częstotliwości, możliwość uzyskania promieniowania od pasma bliskiej podczerwieni do skraju fioletowego pasma widzialnego
+    \item na swobodnych elektronach (laser promieniowania X)
+    \end{itemize}
+  \item W zależności od widma promieniowania, w których laser pracuje: lasery w podczerwieni, w części widzialnej, w nadfiolecie
+  \end{enumerate}
+\item[Zastosowania laserów]:
+  \begin{itemize}
+  \item Przemysł (poligrafia, znakowanie produktów, cięcie/spawanie/obróbka cieplna metali
+  \item Technologia wojskowa
+  \item Medycyna
+  \item Telekomunikacja
+  \item Efekty wizualne i geodezja
+  \end{itemize}
+\end{description}
+\section{Ciało stałe}
+\begin{description}
+\item[Ciało stałe]:
+  \begin{itemize}
+  \item atomy bądź cząsteczki ciała stałego są ściśle upakowane w przestrzeni
+  \item odległości między cząsteczkami są stałe i ściśle określone
+  \item przy zastosowaniu odpowiedniej siły ułożenie cząstek w sieci krystalicznej może ulec trwałej deformacji
+  \item cząsteczki ciała stałego drgają wokół położenia równowagi w sieci krystalicznej
+  \end{itemize}
+\item[Podział ciał stałych]:
+  \begin{itemize}
+  \item O strukturze krystalicznej - wykazują daleko zasięgowe uporządkowanie atomowe, są to monokryształy i polikryształy
+  \item O strukturze bezpostaciowej (amorficznej) - wykazują brak uporządkowania atomowego dalekiego zasięgu, charakteryzuje je nieporządek (chaos) topologiczny i chemiczny. Może występować częściowe uporządkowanie krótkozasięgowe. Ciała stałe amorficzne to szkło, materiały tlenkowe. Metale i stopy przeprowadzone w stan stały za pomocą szybkiego chłodzenia
+  \end{itemize}
+\item[Rodzaje kryształów (rodzaje wiązań atomowych)]:
+  \begin{itemize}
+  \item Kryształy cząsteczkowe (molekularne) -- kryształ, w którym sieć krystaliczną tworzą dobrze zdefiniowane cząsteczki powiązane słabymi oddziaływaniami międzycząsteczkowymi (np siłami van der Waalsa). Niskie temperatury topnienia, niewielka twardość i wytrzymałość mechaniczna, nie przewodzą prądu elektrycznego, rozpuszczalne w rozpuszczalnikach niepolarnych
+  \item Kryształy o wiązaniach wodorowych: atomu wodoru tworzą silne wiązania z atomami pierwiastków elektroujemnych takich jak np tlen czy azot. Występują np w cząsteczkach kwasu DNA.
+  \item Kryształy jonowe -- węzły sieci są obsadzone przez jony. Jony (kationy i aniony) oddziałowują na siebie siłami elektrostatycznymi. Liczba jonów przeciwnego znaku otaczających jon danego znaku to liczba koordynacyjna. Wysokie temp topnienia, duża twardość i wytrzymałość mechaniczna, w stanie stopionym i w roztworze wodnym przewodzą prąd, rozpuszczają się na ogół dobrze w rozpuszczalmnikach polarnych
+  \item Kryształy kowalencyjne (atomowe) -- węzły sieci są zajęte przez obojętne atomy, atomy połączone są wiązaniami kowalencyjnymi (mocne wiązania) realizowane poprzez wymianę wspólnych elektronów walencyjnych. Wysokie temp topnienia, bardzo twarde, duża wytrzymałość mechaniczna, nie przewodzą prądu elektrycznego w stanie czystym, $\longrightarrow$ domieszki nadają im cechy półprzewodników, nierozpuszczalne w rozpuszczalnikach polarnych i niepolarnych
+  \item Kryształy metaliczne -- węzły sieci są obsadzone dodatnio naładowanymi zrębami atomowymi, pomiędzy którymi poruszają się wolne elektrony tzw. ``gaz elektronowy''. Po przyłożeniu ładunku zewnętrznego ruch elektronów staje się uporządkowany i mamy do czynienia z przepływem prądu elektrycznego. Kationy metali oddziałują siłami elektrostatycznymi ze swobodnie poruszającymi się elektronami (gaz elektronowy). Cechy: Połysk metaliczny, ciągliwe, kowalne, przewodnictwo cieplne i elektryczne, temp topnienia zróżnicowane, wytrzymałość zróżnicowana
+  \end{itemize}
+\item[Teoria pasmowa ciała stałego] -- teoria kwantowa opisująca stany energetyczne elektronów w krysztale. \\
+  W odróżnieniu od atomów (dozwolone stany energetyczne elektronów stanowią zbiór poziomów dyskretnych) w kryształach dozwolone elektronowe stany energetyczne mają charakter pasm o szerokości kilku elektronowoltów
+\item[Model pasmowy ciała stałego]:
+  \begin{itemize}
+  \item Atomy (elektrony) znajdują się w określonych stanach energetycznych:
+    \begin{itemize}
+    \item pasmo walencyjne -- zakres energii jaką posiadają elektrony najsłabiej związane z jądrem atomu
+    \item pasmo przewodnictwa -- zakres energii, jaką posiadają elektrony uwolnione z atomu, będące wówczas nośnikami swobodnymi w ciele stałym
+    \end{itemize}
+  \item Dozwolone stany energetyczne oddzielone są strefami zabronionymi (przerwami energetycznymi) $E_g$
+    $$E_g = E_C-E_V$$
+    $E_C$ - najniższa energia pasma przewodzenia, $E_V$ - najwyższa energia pasma walencyjnego
+  \item Atom (elektron) może zmienić swoją energię tylko skokowo - wiąże się to z pobraniem/oddaniem przez atom energii określonej przerwą energetyczną
+  \item Minimalny poziom energetyczny $E_C$ jest energią potencjalną elektronów w paśmie przewodnictwa, każdy nadmiar ponad $E_C$ jest energią kinetyczną w całkowitej energii $E$ prawie swobodnie przemieszczającego się elektronu w przestrzeniach międzywęzłowych sieci krystalicznej półprzewodnika
+    $$E = E_c+\frac{m_ev^2_{th}}{2}$$
+    $m_e$ - tzw masa efektywna elektrony, czyli masa, która uwzględnia także oddziaływanie periodycznego pola sieci krystalicznej na elektron, $v_th$ - średnia prędkość termiczna elektronu
+  \item Oba pasma podstawowe i przewodnictwa obsadzone są przez elektrony walencyjne
+  \item Pozostałe elektrony są silnie związane z atomem i całkowicie wypełniają powłoki (orbity) w liczbie $2n^2$. Odłączenie ich od atomu powoduje jego zniszczenie
+  \item W niecałkowicie zapełnionym paśmie pole elektryczne może spowodować przeniesienie elektronu na sąsiedni poziom energetyczny, tj. wywołać przepływ prądu
+  \item W całkowicie zapełnionym paśmie pole elektryczne nie może zmieniać ani położenia ani pędu elektronu, więc nie wywołuje przepływu prądu 
+  \item Wzajemne położenie pasm podstawowego i przewodnictwa oraz liczba elektronów walencyjnych decydują o właściwościach elektrycznych ciała stałego
+  \end{itemize}
+\item[Podział ciał stałych]:
+  \begin{itemize}
+  \item Izolator: z szeroką przerwą energetyczną (>>2eV), walencyjne pasmo zapełnione, pasmo przewodnictwa puste -- nie przewodzi prądu
+  \item Półprzewodnik: z wąską przerwą energetyczną (< 2 eV), przewodzi prąd
+  \item Metal/Przewodnik: pasma walencyjne i przewodnictwa zachodzą na siebie, niepełne pasmo walencyjne -- dobrze przewodzi prąd 
+  \end{itemize}
+\item[Izolatory (dielektryki)] Podstawowe cechy:
+  \begin{itemize}
+  \item Mała konduktywność
+  \item Pasmo podstawowe całkowicie obsadzone przez elektrony
+  \item Brak elektronów swobodnych (walencyjnych)
+  \item Elektrony nie występują w pasmie przewodnictwa
+  \item Duża szerokość pasma zabronionego
+  \item Niemożność przejścia elektronu do pasma przewodnictwa
+  \item Pod wpływem wysokiego napięcia dielektryk ulega przebiciu i zniszczeniu
+  \end{itemize}
+\item[Przewodniki] Podstawowe cechy:
+  \begin{itemize}
+  \item Duża konduktywność
+  \item Brak pasma zabronionego
+  \item W paśmie przewodnictwa znajduje się bardzo dużo elektronów swobodnych
+  \item Przyłożenie niewielkiego napięcia powoduje przepływ prądu
+  \item Wzrost temperatury powoduje wzrost rezystancji
+  \end{itemize}
+  Najlepszymi przewdonikami są metale -- ciała stałe o budowie krystalicznej, zawierające elektrony swobodne
+\item[Półprzewodniki] Podstawowe cechy:
+  \begin{itemize}
+  \item Konduktywność pomiędzy przewodnikami a izolatorami
+  \item Przerwa energetyczna 0.1-2eV
+  \item W temperatorze pokojowej występują elektrony w paśmie przewodnictwa
+  \item Wraz ze wzrostem temperatury rezystancja półprzewodnika maleje
+  \item Działając na półprzewodnik ciepłem, promieniowaniem, polami elektrycznym lub magnetycznym łatwo jest przenieść elektron z pasma podstawowego do pasma przewodnictwa
+  \end{itemize}
+\item[Półprzewodniki - dziury i elektrony] Zerwanie wiązania elektronowego jest równoznaczne z pojawieniem się luki w sieci wiązań międzyatomowych. \\
+  Przejście pomiędzy pasmami -- generacja i rekombinacja pary dziura-elektron\\
+  \textbf{Prąd w półprzewodniku:} \emph{elektronowy} w paśmie przewodnictwa w kierunku elektrody dodatniej, \emph{dziurowy} w paśmie podstawowym w kierunku elektrody ujemnej
+  \begin{itemize}
+  \item Ruchliwość dziur jest znacznie mniejsza od ruchliwości elektronów
+  \item O przewodności półprzewodnika decyduje liczba jego elektronów i dziur
+  \item Nośniki większościowe -- decydują o prądzie w półprzewodniku (większy wkład w przepływ prądu)
+  \item Nośniki mniejszościowe -- mające mniejszy wpływ na przepływ prądu przez półprzewodnik
+  \item W zależności od technologii wykonania nośnikami większościowymi mogą dziury lub elektrony
+  \end{itemize}
+\item[Przewodnictwo elektronowe (typu n)] - przenoszenie łądunku elektrycznego przez ciało pod działaniem zewnętrznego pola elektrycznego. W modelu pasmowym krystalicznych ciał stałych zjawosko polegające na tym, że elektrony zajmujące stany kwantowe w obrębie pasma przewodnictwa przesuwają się do sąsiednich, nie obsadzonych stanów kwantowych w obrębie tego pasma, w kierunku przeciwnym do kierunku pola elektrycznego
+\item[Przewodnictwo dziurowe (typu p)] -- przenoszenie ładunku elektrycznego przez kryształ pod działaniem zewnętrznego pola elektrycznego, polegające na tym, że elektrony pozostające w niecałkowicie zapełnionym pamie podstawowym przesuwają się do niezajętych poziomów kwantowych (dziur elektronowych) w obrębie tego pasma w kierunku przeciwnym do wektora pola elektrycznego, co formalnie odpowiada przesuwaniu się ładunków dodatnich zgodnie z kierunkiem pola elektrycznego
+\item[Materiały półprzewodnikowe]:
+  \begin{itemize}
+  \item Półprzewodniki - grupa materiałów, które ze względu na przewodnictwo elektryczne zajmują pośrednie miejsce pomiędzy metalami a izolatorami. 
+  \item W dostatecznie niskich temperaturach półprzewodnik staje się izolatorem.
+  \item W temperaturze zera bezwzględnego mają całkowicie obsadzone pasmo walencyjne i całkowicie puste pasmo przewodnictwa
+  \item Zmiana elektrycznego w wyniku niewielkich zmian ich składu
+  \item Dzielą się na samoistne i niesamoistne (typu p i n)
+  \end{itemize}
+\item[Przewodniki samoistne] Półprzewodnik idealnie czysty bez żadnych domieszek ani defektów sieci krystalicznej (niedomieszkowane); w warunkach równowagi termodynamicznej, elektrony w paśmie przewodnictwa pojawiają się wyłącznie wskutek wzbudzenia z pasma walencyjnego (koncentracja elektronów jest równa koncentracji dziur). Obejmują pierwiastki IV grupy układu okresowego: węgiel, krzem, german\\
+  Zależność konduktywności półprzewodnika samoistnego od odwrotności temperatury
+  $$\sigma_s = \sigma_{0s}e^{\frac{-E_g}{2kT}}$$
+  $\sigma_{0s}$ - konduktywność dla zera bezwzględnego, $E_g$ - szerokość przerwy zabronionej, $k$ - stała Boltzmanna, $T$ - temperatura\\
+  Konduktywność:
+  $$\sigma = |e|\left(n\mu_e+p\mu_h\right)$$
+  gdzie $m,\mu_e,p,\mu_h$ są odpowiednio koncentracjami i ruchliwościami elektronów i dziur
+\item[Półprzewodniki niesamoistne, domieszkowe] W sieci krystalicznej monokryształu zamiast atomów pierwiastka materiału półprzewodnikowego znajduje się inny atom - półprzewodnik domieszkowany. Wprowadzony atom - \emph{domieszka donorowa} (przeważają nośniki elektronowe -- półprzewodnik typu n) i \emph{akceptorowa} (przeważają nośniki typu dziurowego -- półprzewodnik typu p)\\
+  Celem domieszkowania jest zmiana własności elektrycznych materiałów półprzewodnikowych
+\item[Półprzewodniki typu n] Domieszka pierwiastka pięciowartościowego -- pięciowartościowy atom As zastępuje w sieci atom Si, cztery z pięciu elektronów walencyjnych As biorą udział w wiązaniu. Pozostały piąty elektron nie uczestniczy w wiązaniu (związanay z dodatnim polem domieszki siłami kulombowskimi) W temperaturach większych od 0 bezwzględnego jonizacja atomów domieszki, powstanie wolnych elektronów, elektrony z pasma donorowego ($E_d$ - odległość poziomu domieszkowania od krawędzi pasma przewodnictwa) małym nakładem energii przedostają się do pasma przewodzenia -- przepływ prądu\\
+  Zależność konduktywności półprzewodnika typu n od odwrotności temperatury
+  $$\sigma_d=\sigma_{0d}=e^{\frac{-E_d}{2kT}}$$
+  Oznaczenia analogiczne
+\item[Półprzewodnik typu p] Domieszka pierwiastka trójwartościowego (np glinu, galu) -- jedno z wiązań pozostaje niewysycone, gdyż atom taki ma o jeden elektron mniej niż atom Si. Wiązanie to może być uzupełnione dowolnym elektronem z innego Si. Przejście takie wymaga bardzo małej ilości energii. Elektrony z pasma walencyjnego przedostają się na poziom akceptorowy $E_a$.\\
+  Elektron, który wysyca wiązanie w atomie domieszki zostawia jednocześnie dziurę w tym węźle. Miejsce to może zająć nowy elektro. W rezultacie takich procesów dziura będzie się przesuwać w kierunku przeciwnym względem ruchu elektronu. W ujęciu struktury pamowej oznacza to pojawienie się dziury w paśmie walencyjnym. Elektrony zwizane z atomami domieszki tracą możliwość przemieszczania się.\\
+  Zależność konduktywności półprzewodnika typu p od odwrotności temperatury
+  $$\sigma_d=\sigma_{0d}=e^{\frac{-E_d}{2kT}}$$
+  $E_d$ - odległość poziomu domieszkowania od krawędzi pasma walencyjnego
+\item[Półprzewodniki] -- koncentracja nośników. Elektrony są tzw. fermionami (cząstki o połówkowym spinie, podlegają funkcji rozkładu Fermiego-Diraca).\\
+  Prawdopodobieństwo obsadzenia stanu o energii E (dozwolonego kwantowymi prawami wyboru) przez elektron, w półprzewodniku o temperaturze T, jest wyrażone funkcją Fermiego-Diraca (prawdopodobieństwo obsadzenia stanu fermionem):
+  $$f(E)=\frac{1}{e^\frac{E-E_F}{kT}+1}$$
+  $E_F$ -- poziom Fermiego, charakteryzuje koncentrację swobodnych nośników ładunku w półprzewodniku dla danej temperatury. Jest to poziom energetyczny, którego prawdopodobieństwo obsadzenia przez elektron wynosi $\frac{1}{2}$, $k$ - stała Boltzmana\\
+  Dla T=0K:
+  $$f(E)=\left\{\begin{array}{l}1\text{      jeśli }E<E_F \\ 2\text{      jeśli }E>E_F \end{array}\right.$$
+  Czyli zapełnione są wszystkie stany o energiach poniżej $E_F$.\\
+  Dla dowolnej temperatury prawdopodobieństwo zapełnienia stanu o energii $E_F$ wynosi $\frac{1}{2}$
+\item[Koncentracja elektronów i dziur w stanie równowagi termodynamicznej.] W półprzewodnikach samoistnych w warunkach równowagi termodynamicznej elektrony w paśmie przewodnictwa pojawiają się wyłącznie wskutek wzbudzenia z pasma walencyjnego. Oprócz widma energetycznego układu elektronów ważną charakterystyką układu jest gęstość stanów energetycznych.
+\item[Funkcja gęstości stanów N(E)] -- określa liczbę stanów przypadającą na daną wartość energii. Odnosi się ona do jednostkowej objętości ciała stałego i jest miarą ilości stanów w przedziale energii E, E+dE.
+  $$N(E)dE=\frac{m^\frac{3}{2}}{\sqrt{2}\pi^2\hbar^3}E^\frac{1}{2}\text{   ,  }E=\frac{\hbar^2k^2}{2m}$$
+  Niech gęstość stanów = $N_e(E)$ zaś prawdopodobieństwo, że zostaną zajęte elektronami = $f_e(E)$, wówczas koncentracja elektronów ($n_e$):
+  $$n_e=\int\limits^\infty_{E_g}N_e(E)f_e(E)dE$$
+  Wiemy, że dla $E-E_F>>kT$ (niskie temperatury) rozkład Fermiego-Diraca dla elektronów:
+  $$f_e(E)=\frac{1}{e^\frac{E-E_F}{kT}}\approx \frac{1}{e^\frac{E-E_F}{kT}}=e^\frac{E_F-E}{kT}$$
+  Liczba stanów dla elektronów:
+  $$N_e(E)dE=\frac{1}{\sqrt{2}\pi^2}\left(\frac{m_e}{\hbar^2}\right)^\frac{3}{2}\left(E-E_g\right)^\frac{1}{2}$$
+  $$n_e = \frac{1}{\sqrt{2}\pi^2}\left(\frac{m_e}{\hbar^2}\right)^\frac{3}{2}e^\frac{E_F}{kT}\int\limits^\infty_{E_g}\left(E-E_g\right)^\frac{1}{2}e^{-\frac{E}{kT}}dE$$
+  $$n_e=e\left(\frac{2\pi mn^*_ekT}{\hbar^2}\right)^\frac{3}{2}e^\frac{E_F-E_g}{kT}$$
+  gdzie: $\left(\frac{2\pi mn^*_ekT}{\hbar^2}\right)^\frac{3}{2}$ - $N_c$, efektywna gęstość stanów w paśmie przewodnictwa w [$m^{-3}$], wszystkie stany są zastąpione stanami na dnie pasma przewodnictwa \\
+  $e^\frac{E_F-E_g}{kT}$ - funkcja Fermiego
+\item[Koncentracja dziur w paśmie walencyjnym] - kolejne w chuj długie wyprowadzenie, nie chce mi się, slajd wykład 12, godzina 16.35\\
+  $N_V$ - efektywna gęstosć stanów w paśmie walencyjnym
+
+  Mnożąc przez siebie wyrażenia na koncentrację elektronów i dziu mamy:
+
+  $$n_en_v=N_CN_Vexp\left(-\frac{E_g}{kT}\right)$$
+  Iloczyn ten jest taki sam dla półprzewodnika samoistnego jak i domieszkowanego
+\item[Poziom Fermiego w półprzewodniku samoistnym] W danej temperaturze T $n_en_v=const\Rightarrow(n*p=const)$. Wprowadzenie domieszki przy zwiększeniu n spowoduje zmniejszenie p. (Tutaj też odpuszczam kosmiczne wzory)\\
+  W temperaturze 0K poziom Fermiego przypada dokładnie w środku przerwy energetycznej i nie zmienia się ze zmianą temperatury, o ile $m^*_e=m^*_h$\\
+  Jeżeli masy efektywne są różne poziom Fermiego przesuwa się przy wzroście temperatury w kierunku pasma, któremu odpowiada mniejsza masa efektywna
+  $$E_F=\frac{E_g}{2}$$
+  $E_g$ - szerokość przerwy energetycznej\\
+  Równanie jest spełnione dla półprzewodników samoistnych z wąską przerwą energetyczną.
+\item[Masa Efektywna] - masa, jaką należy przypisać elektronowi w krysztale, aby pod wpływem siły zewnętrznej uzyskał takie samo przyspieszenie jak elektron swobodny. Masa efektywna elektronu swobodnego jest równa jego masie. Masa efektywna elektronu swobodnego jest równa jego masie. Masa efektywna charakteryzuje pasmo, zależy od gęstości poziomów energetycznych w paśmie (gęstość jest mała, gdy energia szybko rośnie z wektorem k). Jest wielkością anizotropową (masa efektywna podłużna i poprzeczna).\\
+  Elektrony znajdujące się przy wierzchołku pasma mają ujemną masę efektywną lub mówimy o dziurach o dodatniej masie efektywnej. Pojęcie masy efektywnej wprowadzono by opisać ruch elektronu, na który oprócz ewentualnej siły zewnętrznej oddziałuje sieć, w której ten elektron się znajduje.
+  $$m^* =\hbar^2\left(\frac{d^2E}{dk^2}\right)^{-1}$$
+\item[Półprzewodniki -- koncentracja nośników w półprzewodniku domieszkowanym] Dla silnie domieszkowanego półprzewodnika typu n:
+  \begin{itemize}
+  \item Koncentracja elektronów:
+    $$n_d\approx N_d-N_a$$
+  \item Koncentracja dziur:
+    $$p_n=\frac{n^2_i}{n_n}$$
+  \end{itemize}
+  gdzie: $N_d$ - koncentracja domieszek donorowych, $N_a$ - koncentracja domieszek akceptorowych, $n_i$ - koncentracja elektronów w półprzewodniku samoistnym
+\item[Prąd dyfuzji] -- prąd wywołany przez chaotyczny ruch rozproszonych nośników nadmiarowych, z obszarów o większej koncentracji do obszarów o mniejszej koncentracji, w sieci krystalicznej półprzewodnika (występuje oprócz rekombinacji)\\
+  Gęstość prądu dyfuzji elektronów: $J_{nD} = qD_ngrad(n)$\\
+  Gęstość prądu dyfuzji dziur: $J_{pD} = -qD_pgrad(p)$\\
+  $D_n$,$D_p$ -- współczynniki dyfuzji, $n$, $p$ -- koncentracja elektronów/dziur w danym obszarze półprzewodnika
+\item[Prąd unoszenia (konwekcji)] -- prąd wywołany ruchem ładunków elektrycznych, pod wpływem np. istniejącego pola elektrycznego, nie związanych z cząstkami elementarnymi ośrodka, w którym się poruszają. Pole elektryczne wytwarza przyłożone do ośrodka (półprzewodnika) napięcie\\
+  Gęstość prądu unoszenia elektronów: $J_{nu} = q\mu_nnE$\\
+  Gęstość prądu unoszenia dziur: $J_{pu} = q\mu_ppE$\\
+  gdzie ruchliwość ładunków dana jest równaniami (Einsteina):
+  $\mu_n=\frac{q}{kT}D_n$, $\mu_p=\frac{q}{kT}D_p$
+  
+  Całkowita gęstość prądu elektronów: $J_n=J_{nD}+J_{nu}$, analogicznie dla dziur.\\
+  Całkowity prąd w półprzewodniku: $J=J_n+J_p$
+\item[Złącze p-n] -- pojedynczy kryształ półprzewodnika, w którym jeden obszar domieszkowany jest tak, aby powstał półprzewodnik typu n, a drugi, sąsiadujący z nim obszar domieszkowany jest tak, aby powstał półprzewodnik typu p.
+\item[W obszarze typu n] nośniki większościowe ujemne (elektrony) oraz unieruchomione w siatce krystalicznej dodatnie przez domieszki donorowe
+\item[W obszarze typu p] nośniki większościowe dodatnie (dziury) oraz ujemne jony domieszki akceptorowej\\
+  W półprzewodnikach obu typów występują także nośniki mniejszościowe przeciwnego znaku niż większościowe, koncentracja nośników mniejszościowych << koncentracja nośników większościowych \\
+  Na styku obszarów p i n przemieszczanie (dyfuzja) swobodnych nośników większościowych na skutek różnicy koncentracji nośników: elektrony do obszaru typu p, dziury do obszaru typu n (stają się nośnikami mniejszościowymi)\\
+  Rekombinacja z nośnikami większościowymi, które nie przeszły na drugą stronę złącza\\
+  Redukcja nośników po obu stronach złącza:
+  \begin{itemize}
+  \item Obecność nieruchomych jonów ujemnych: akceptorów (w p) i dodatnich donorów (w n)
+  \item Powstanie wewnętrznego pola elektrycznego, które zapobiega dalszej dyfuzji nośników większościowych, sprzyja przepływowi nośników mniejszościowych
+  \item Powstanie warstwy ładunku przestrzennego (warstwa zubożana, warstwą zaporową), nieposiadającej swobodnych nośników
+  \end{itemize}
+  Stan równowagi termicznej złącza -- powstanie różnicy potencjałów wzdłuż złącza o typowej wartości równej 1V (potencjał jest wyższy po stronie materiału typu n)\\
+  Przez złącze p-n płyną dwa prądy: prąd dyfuzyjne $J_D$ oraz prąd wsteczny $J_W$\\
+  Prąd dyfuzyjny $J_D$ utworzony przez ruch nośników większościowych elektronów z ,,n'' do ,,p'' i dziur z ,,p'' do ,,n''. Zależy od wartości i znaku zewnętrznego potencjału\\
+  Prąd wsteczny $J_W$ to ruch nośników mniejszościowych: dziur z ,,n'' do ,,p'', elektronów z ,,p'' do ,,n''. Wartość prądu wstecznego praktycznie nie zależy od wartości przyłożonego napięcia, zalezy natomiast od temperatury i własności materiału (parametry mające wpływ na ilość nośników mniejszościowych)\\
+  W stanie równowagi termicznej natężenie $J_D$ i $J_W$ są sobie równe
+\item[Polaryzacja w kierunku przewodzenia]:
+  \begin{itemize}
+  \item Zmniejszenie bariery potencjału o wartość zewnętrznego napięcia U
+  \item Rośnie prawdopodobieństwo przejścia nośników większościowych przez warstwę zaporową
+  \item Prąd dyfuzji elektronów z obszaru n do p i dziur z obszaru p do n
+  \item Prąd dysuzji nośników większościowych znacznie większy niż prąd unoszenia nośników mniejszościowych
+  \item Zmniejszenie szerokości obszaru zubożonego
+  \item Maleje opór wewnętrzny
+  \end{itemize}
+\item[Polaryzacja w kierunku zaporowym]:
+  \begin{itemize}
+  \item Wzrost bariery potencjału o wartość napięcia zewnętrznego U
+  \item Swobodne nośniki większościowe, pod działaniem sił pola elektrycznego, odpływają z obszaru otaczającego warstwę zaporową
+  \item Zwiększenie szerokości obszaru zubożonego
+  \item Ruch nośników większościowych przez złącze praktycznie niemożliwy, płynie tylko niewielki prąd unoszenia (prąd wsteczny)
+  \item Wzrost oporu wewnętrznego złącza
+  \end{itemize}
+\item[Podstawowe półprzewodnikowe elementy elektroniczne -- diody]:
+  \begin{itemize}
+  \item Dioda prostownicza -- najczęściej krzemowa lub germanowa wykorzystywana w układach prostowników. Dioda przeznaczona głównie do prostowania prądu przemiennego o małej częstotliwości, której głównym zastosowaniem jest dostarczenie odpowiednio dużej mocy prądu stałego.\\
+    Złącze działa jak przełącznik, który dla jednego znaku napięcia wejściowego jest zamknięty, a dla drugiego jest otwarty
+  \item Dioda świecąca LED -- jest spolaryzowanym w kierunku przewodzenia złączem p=n\\
+    Wymaga dużej liczby elektronów w paśmie przewodnictwa i dużej liczby dziur w paśmie walencyjnym, tj. silnie domieszkowanego złącza p-n oraz prostej przerwy energetycznej\\
+    Elektrony są wstrzykiwane do obszaru typu n a dziury do p. Światło jest emitowane z wąskiego obszaru zubożonego podczas rekombinacji elektronu z dziurą (rekombinacja promienista)\\
+    Dioda zaliczaba jest do półprzewodnikowych przyrządów optoelektronicznych, emitujących promieniowanie w zakresie światła widzialnego, jak i podczerwieni
+  \item Dioda Zenera -- stosowana w układach stabilizacji napięcia, przeznaczona do pracy przy polaryzacji w kierunku zaporowym.
+  \item Dioda pojemnościowa (warikap) -- zmiana pojemności złącza PN pod wpływem doprowadzonego napięcia. Wykorzystywana do strojenia obwodów rezonansowych
+  \item Fotodioda -- Jonizacja materiału półprzewodnikowego pod wpływem światła (zmiana natężenia padającego światła powoduje zmianę parametrów elektrycznych)
+  \end{itemize}
+\item[Podstawowe półprzewodnikowe elementy elektroniczne -- tranzystory]:
+  \begin{itemize}
+  \item Tranzystory bipolarne -- umożliwia sterowanie przepływem dużego prądu za pomocą prądu znacznie mniejszego, służą do wzmacniania sygnałów. Tranzystor bipolarny ma 3 warstwy NPN lub PNP, a więc są 2 złącza PN. Skrajne warstwy: kolektor i emiter, warstwa środkowa -- baza\\
+    Wzmocnienie prądowe tranzystora (stosunek zmian prądu kolektora do zmian prądu bazy: $\beta = \frac{\Delta I_C}{\Delta I_B}$
+  \end{itemize}
+\end{description}
+\section{Nadprzewodnictwo}
+\begin{description}
+\item[Nadprzewodnictwo] -- pewne szczególne połączenie własności elektrycznych i magnetycznych, które uwidaczniają się w niektórych substancjach po ich ochłodzeniu poniżej temperatury charakterystycznej:
+  \begin{itemize}
+  \item Zanik oporu elektrycznego
+  \item Zanik indukcji magnetycznej wewnątrz nadprzewodnika
+  \item Kwantowanie strumienia magnetycznego w nadprzewodniku
+  \end{itemize}
+\item[Podstawowe właściwości stanu nadprzewodzącego]:\\
+  \begin{itemize}
+  \item Efekt Meissnera-Ochsenfelda -- wypychanie pola magnetycznego z nadprzewodnika. Nadprzewodnik jest wtedy doskonałym diamagnetykiem, umieszczony w polu magnetycznym wytwarza w swoim wnętrzy pole przeciwne do pola zewnętrznego. Półprzewodnik jest wtedy w tzw. \emph{fazie Meissnera}
+  \item Zerowy opór elektryczny -- W nadprzewodnikach w pewnej temperaturze $T_C$ zwanej temperaturą krytyczną opór zmniejsza się do zera, mimo obecności domieszek w próbce. Zanik oporu następuje w bardzo wąskim przedziale temperatur
+  \item Istnienie krytycznego strumienia indukcji magnetycznej, powyżej której znika nadprzewodnictwo. Efekt ten zależy od temperatury wg następującej zależności: 
+    $$B_C(T) = const\left[1-\left(\frac{T}{T_C}\right)^2\right]$$
+  \item Wkład w ciepło właściwe od elektronów przewodnictwa nadprzewodnika zależy od temperatury:
+    $$C^{el}_v \approx constr \cdot e^\frac{-Delta}{kT}$$
+    $\Delta$ - stała mniejsza od energii Fermiego o $10^4$ razy
+  \item Wykazują efekt izotopowy -- temperatura krytyczna dla różnych izotopów danego pierwiastka zależy od masy izotopu M jak:
+    $$T_C\approx \frac{1}{\sqrt{M}}$$
+  \item Strumień pola magnetycznego przechodzącego przez pole powierzchni pierścienia nadprzewodzącego jest wielkością skwantowaną
+  \end{itemize}
+\item[Podział nadprzewodników ze względu na reakcję na zewnętrzne pole magnetyczne]:
+  \begin{description}
+  \item [I rodzaju]:
+    \begin{itemize}
+    \item Związki pierwiastków nadprzewodzących i niektórze czyste metale
+    \item Jedna określona wartość krytyczna $H_C$, poniżej której nadprzewodnik jest idealnym diamagnetykiem (\emph{efekt Meissnera})\\
+      Wraz ze wzrostem przyłożonego pola worteksów przybywa, aż wreszcie w polu krytycznym tworzą one gęsto upakowaną sieć, gdzie odległość między worteksami równa jest długości koherencji (odległość, na której nie może wystąpić istotna zmiana koncentracji nośników prądu w nadprzewodniku znajdującym się w niejednorodnym polu magnetycznym). Dalsze zwiększanie upakowania worteksów nie jest możliwe, ponieważ odległość między nimi musiałaby spaść poniżej długości koherencji, a więc rozmiaru pary Coopera. Dlatego wraz z przekroczeniem Pola krytycznego materiał przechodzi w stan normalny
+    \end{itemize}
+  \end{description}
+\item[Nośniki prądu -- pary elektronów (pary Coopera)] Składają sią z dwóch elektronów o przeciwnie skierowanych rzutach spinu. Sumaryczny spin pary wynosi zero
+\item[Jak powstają pary Coopera]:
+  \begin{itemize}
+  \item Elektrony tworzące parę Coopera są związane ze sobą słabym oddziaływaniem przyciągającym
+  \item Oddziaływanie przyciągające wynika z deformacji sieci krystalicznej -- pierwszy elektron deformuje sieć krystaliczną powodując lokalny wzrost koncentracji dodatniego ładunku jonów, co powoduje przyciąganie drugiego elektronu
+  \item Deformację sieci przez elektron można traktować jak superpozycję fononów (kwantów energii drgań sieci krystalicznej). Pary Coopera można sobie wyobrazić jako dwa elektrony wymieniające nieustannie między sobą wirtualne fonony tak, że pędy składających się na parę elektronów nieustannie się zmieniają zachowują jednak stały pęd pary
+  \item Pęd pary Coopera przy braku przepływu prądu wynosi zero
+  \item Pary Coopera to Bozony (cząstki przenoszące oddziaływania, o całkowitym spinie) -- mogą kondensować. W przeciwieństwie do Fermionów nie obowiązuje zakaz Pauliego i dążą do zajęcia tego samego poziomu  energetycznego. Dowolna liczba bozonów może dzielić ten sam stan kwantowy
+  \item Tworzenie się par Coopera jest zjawiskiem kolektywnym, w którym bierze udział jednocześnie duża liczba cząstek
+  \item Par nie można traktować jako cząstki niezależnie, gdyż przeplatają się one w przestrzeni
+  \item Pary Coopera są tworzone jedynie przez elektrony znajdujące się w pobliżu energii Fermiego
+  \end{itemize}
+\item[Dlaczego pary Coopera nadprzewodzą]:
+  \begin{itemize}
+  \item Pojawienie się oporu elektrycznego oznaczałoby, że elektrony ulegają rozpraszaniu, czyli zmieniają swój pęd w zderzenia z fononami lub defektami struktury krystalicznej
+  \item W procesie łączenia się w pary Coopera uczestniczą elektrony o przeciwnych pędach np K i -K, co w sumie daje zero. Para biorąca udział w przepływie prądu ma sumaryczny pęd różny od zera równy np 2P. Elektrony pary mają zatem pędy K+P i -K+P. Gdyby jeden z elektronów pary uległ rozproszeniu, jego pęd zmieniłby się o wartość, np Q, wynosiłby powiedzmy -K+P+Q; taki elektron nie mógłby już korelować z elektronem o pędzie K+P, czyli para uległaby rozerwaniu. To zaś zwiększyłoby energię układu o 2$\Delta$, co byłoby niekorzystne (zasada minimum energii)
+  \item Istnienie w parze 2 elektronów z energetycznego punktu widzenia jest korzystniejsze od niezależnego trwania.
+  \end{itemize}
+  Pomimo zderzeń np. z defektami sieci, pary Coopera, w przeciwieństwie do pojedynczych elektronów nie są rozpraszane (ich przepływ odbywa się bez tarcia -- BRAK OPORU)!!!
+  \begin{itemize}
+  \item Wiązanie się elektronów w pary Coopera powoduje obniżanie się energii układu i zmianę rozkładu stanów energetycznych dostępnych dla elektronów w pobliżu poziomu Fermiego
+  \item Stan podstawowy oddzielony jest od pierwszego stanu wzbudzonego (polegającego na rozerwaniu pary Coopera) przerwą energetyczną $E_g$
+  \item Wartość $E_g$ zależy od temperatury .\\
+    W temp 0K:
+    $$E_g(0) = 2\Delta(0)=3.5kT_c$$
+    blisko $T_c$:
+    $$\Delta(T)\approx 3.2kT_c\sqrt{1-\frac{T}{T_c}}$$
+  \item Rozproszenie pary Coopera może nastąpić w wyniku dostarczenia energii prazekraczającek szerokość przerwy energetycznej
+  \item Stan nadprzewodzący może być zniszczony, oprócz przyłożenia silnego pola magnetycznego lub podgrzania, również przez przepływ odpowiednio dużego prądu. Przepływ prądu powoduje wzrost en. kinetycznej elektronów tworzących parę Coopera. Nadprzewodnictwo znika, gdy suma przyrostów en. kinetycznej tych elektronół przekroczy podwojoną wartość $E_g$
+  \end{itemize}
+\item[Tunelowanie] -- zjawisko kwantowe, w którym elektrony przenikają z jednego materiału do drugiego poprzez wąską barierę, np. warstwę izolatora
+\item[Zjawisko Josephsona] -- tunelowanie par Coopera przez warstwę izolatora z jednego nadprzewodnika do drugiego, potwierdza kwantowy charakter strumienia pola magnetycznego (zapostulowane przez Londona)\\
+  Przez złącze może płynąć prąd nawet bez zewnętrznego pola elektrycznego. Tunelowanie par Coopera przez cienką barierę pomiędzy nadprzewodnikami. Można obserwować dwa zjawiska Josephsona:
+  \begin{itemize}
+  \item stałoprądowe (prąd stały płynie przez złącze bez zewnętrznego napięcia)
+  \item zmiennoprądowe (stałe napięcie przyłożone do złącza powoduje oscylacje natężenia prądu płynące przez złącze)
+  \end{itemize}
+\item[Stałoprądowe zjawisko Josephsona] Funkcje falowe par Coopera $\Psi_1$ i $\Psi_2$ pary po obu stronach złącza:
+  $$\psi_1 =n^\frac{1}{2}_1e^{i\theta_1}\text{, a }\psi_2=n^\frac{1}{2}_2e^{i\theta_2}$$
+  $n_1,n_2$ - koncentracje nośników\\
+  $\theta_1, \theta_2$ - fazy funkcji falowych\\
+  Stały prąd par Coopera przez dielektryczne złączę, który płynie przy zerowym napięciu na złączu, zależy tylko od różnicy faz par Coopera w dwóch obszarach.\\
+  Natężenie $J$ prądu stałego może mieć różne wartości zależnie od różnicy faz $\delta$ funkcji falowych $\Psi_1$ i $\Psi_2$ po obu stronach złącza:
+  $$J=J_0sin\delta=J_0sin(\theta_2-\theta_1)$$
+  $J_0$ - maksymalny prąd dla U=0
+\item[Zmiennoprądowe zjawisko Josephsona] Po przyłożeniu różnicy potencjałów V do złącza zmienia się energia par po obu stronach złącza. W tym przypadku para Coopera tunelująca przez złączę napotyka różnice energii potencjalnej
+  $$qV(q=-2e)$$
+  Możemy przyjąć, że para po jednej stronie ma energię potencjalną eV, a po drugiej stronie złącza -eV. Dodatkowo zaczyna zmieniać się w czasie różnica faz funkcji falowym, tym szybciej im większe jest napięcie V:
+  $$\delta(t)=\delta(0)-\frac{2eVt}{\hbar}$$
+  Płynący prąd staje się prądem przemiennym, oscylącym z częstością $\omega$
+  $$J=J_0sin|\delta(0)-\frac{2eVt}{\hbar}|$$
+  $\omega = \frac{2eV}{\hbar}$ -- częstość oscylacji prądu nadprzewodzącego\\
+  Napięcie na złączu V=1$\mu$V wywołuje oscylacje o częstości 483.6 MHz
+\item[Nadprzewodzący Interferometr kwantowy (SQUID)] Strumień magnetyczny w pierścieniu $\Phi$=strumień od pola zewnętrznego ($\Phi_{ext}$) + strumień od prądu nadprzewodzącego płynącego po powierzchni pierścienia ($\Phi_{sc}$)\\
+  $\Phi$ jest skwantowany\\
+  $\Phi$ -- brak warunku skwantowania dla $\Phi_{ext}$, dlatego $\Phi_{sc}$ przybiera takie wartości, aby $\Phi$ mógł być skwantowany\\
+  Doświadczalnie stwierdzono, że całkowity strumień przechodzący przez nadprzewodzący pierścień może przybierać tylko skwantowane wartości, które są całkowitymi wielkościami kwantu strumienia $\Phi_0$ (flukson)
+$$\Phi_0 = \frac{h}{2e}\approx 2.07\cdot10^{-15}[Tm^2]$$
+\item[Pętla z dwoma złączami Josephsona w zewnętrznym polu magnetycznym] Przez pętle przepuszcza się prąd o natężeniu $J$ przy U=0\\
+  Strumień magnetyczny $\Phi=B\cdot S$ zmienia fazy funkcji falowych par Coopera płynących w gałęziach a i b:
+  $$\delta_b=\delta_0+\frac{e}{\hbar c}\Phi\text{,    }\delta_a = \delta_0-\frac{e}{\hbar c}\Phi$$
+  Prąd J jest sumą prądów z obu gałęzi:
+  $$J=J_0\left[sin\left(\delta_0+\frac{e}{\hbar c}\Phi\right) + sin\left(\delta_0-\frac{e}{\hbar c}\right)\right] = 2J_0sin\delta_0cos\frac{e\Phi}{\hbar c} $$
+  Natężenie prądu jest periodyczną funkcją strumienia $\Phi$. Maksima występują dla warunku: $\frac{e\Phi}{\hbar c}=s\pi$, gdzie s jest liczbą całkowitą
+\item[Magnetometry SQUID] -- wykorzystywane do pomiaru nawet najsłabszych pól magnetycznych
+\item[Zastosowanie nadprzewodników]:
+  \begin{itemize}
+  \item Łożyska nadprzewodzące -- do konstrukcji łożysk nadprzewodzących wykorzystuje się zjawisko lewitacji magnesu nad nadprzewodnikiem. Łożyska takie cechują się bardzo dobrą stabilnością oraz małymi stratami. Znajduje zastosowanie w wielu urządzeniach, na przykład w pompach próżniowych.
+  \item Przewody i druty nadprzewodzące -- druty projektuje się tak, aby odprowadzanie ciepła było zawsze szybsze niż jego wytwarzanie. Dlatego też włókna nadprzewodzące musza mieć bardzo małą średnicę rzedu 0.01mm, aby wyttworzyć przewody stosuje się podłoże z elastycznego materiału, zawierające ścieżkę nadprzewodzącą. Najprostszy przewód nadprzewodzący stanowi pręt lub rura miedziana pokryta warstwą nadprzewodnika. Inną wersją przewodu jest pokryta warstwą nadprzewodzącą taśma stalowa lub miedziana
+  \item Zastosowanie przemysłowe -- Brak strat energii na wydzielanie ciepła w trakcie przepływu prądu elektrycznego w nadprzewodniku stwarza możliwości praktycznego zastosowania nadprzewodników (np Elektromagnesy)
+  \item Kolej magnetyczna to kolej, w której tradycyjnej torowisko zostało zastąpione układem elektromagnesów. Dzięki polu magnetycznemu kolej ta nie ma kontaktu z powierzchnią tory, gdyż cały czas unosi się nad nim. Do realizacji tego zadania wykorzystuje się elektromagnesy wykonane z nadprzewodników lub konwencjonalne. Mogą przez to rozwijać duże prędkości. Dzięki zastosowaniu magnesów eliminowane jest tarcie kół. Dzięku temu zbliżają się do 600 km/h
+  \end{itemize}
+\item[Nadprzewodniki wysokotemperaturowe] -- nadprzewodniki o wysokiej temp krytycznej > 77K -- nadprzewodnictwo osiągalne przy chłodzeniu ciekłym azotem
+\item[Nadprzewodniki wysokotemperaturowe -- własności]:
+  \begin{itemize}
+  \item Pary ładunku e są nośnikiem prądu nadprzewodzącego
+  \item Są to anizotropowe kryształy jonowe o budowie warstwowej, które w zależności od domieszkowania są izolatorami lub nadprzewodnikami o bardzo nietypowych własnościach w stanie normalnym, głównie tlenki Cu
+  \end{itemize}
+\item[Fulereny] -- trzecia poza diamentem i grafitem stabilna forma węgla. Tworzą je cząsteczki przypominające kształtem klatki. Podstawową formą jest $C_{60}$\\
+  Związki fullerenów z metalami alkaicznymi są nadprzewodnikami. Na przykłád związek K3C60 w którym potas znajduje się w położeniach oktaedrycznych  komórki regularnej jest nadprzewodnikiem o temperaturze krytycznej $T_C$ = 19.2K
+  \begin{itemize}
+    \item Mają temperatury krytyczne ok 100K, czyli o rząd większe niż w przypadku nadprzewodników klasycznych
+    \item Są nadprzewodnikami II rodzaju
+    \item Kwant strumienia w nadprzewodnikach wysokotemperaturowych jest identyczny z $\Phi_0$ odkrytym w klasycznych nadprzewodnikach
+  \end{itemize}
+  Na nowo odkrywanych materiałach nadprzewodzących przeprowadza się testy obejmujące: badanie efektu Meissnera, zmiennoprądowe zjawisko Josephsona, trwałe prądy i zerowy opór elektryczny\\
+  Choć wiadomo, że mechanizm fononowy odgrywa pewną rolę, brak jest jednak kompletnej teorii mikroskopowej opisującej nadprzewodnictwo temperaturowe
+\end{description}
+\end{document}
